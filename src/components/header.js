@@ -1,32 +1,30 @@
-import { Link } from "gatsby"
+import COLORS from "tinycolor2"
+import { LinkButton, Button } from "radiance-ui"
 import PropTypes from "prop-types"
 import React from "react"
 
+import "../css/index.css"
+
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+  <header className="header">
+    <h1 className="logo">{siteTitle}</h1>
+    <div className="link-container">
+      <a className="link-text">WHY CUROLOGY</a>
+      <a className="link-text">REVIEWS</a>
+      <a className="link-text">COMMUNITY</a>
+      <a className="link-text">SURVEY</a>
+    </div>
+    <div className="login-btn-container">
+      <a className="link-text">LOG IN</a>
+      <Button.Container>
+        <LinkButton
+          buttonColor={COLORS.statusRed}
+          buttonType="secondary"
+          style={{ minWidth: "0", userSelect: "none" }}
         >
-          {siteTitle}
-        </Link>
-      </h1>
+          START TRIAL
+        </LinkButton>
+      </Button.Container>
     </div>
   </header>
 )

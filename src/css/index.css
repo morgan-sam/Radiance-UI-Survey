@@ -1,0 +1,75 @@
+@import url(//db.onlinewebfonts.com/c/f4c9951744c0ef14010218fc1b2f7938?family=Larsseit);
+@import url(//db.onlinewebfonts.com/c/4e6177b918ba7f280b5db111d868cc94?family=Larsseit+Thin);
+* {
+  font-family: "Larsseit Thin", sans-serif;
+}
+/* * {
+  font-family: "Larsseit", sans-serif;
+} */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  color: #332e54;
+  font-family: "Larsseit", sans-serif;
+  font-weight: 400;
+  user-select: none;
+  margin-right: 5rem;
+}
+
+.link-container > * {
+  margin: 1rem;
+}
+
+.login-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.login-btn-container > * {
+  margin: 1rem;
+}
+.link-text {
+  cursor: pointer;
+  user-select: none;
+}
+.link-text:hover {
+  border-bottom: 1px solid #332e54;
+}
+
+img {
+  height: 40rem;
+  user-select: none;
+}
+
+.splash-container {
+  display: block;
+  width: 100%;
+  height: 35rem;
+  background-image: url(https://images.unsplash.com/photo-1556228720-9b1e04f13f63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1900&q=80);
+  background-size: cover;
+  background-position-y: -20rem;
+}
+
+.survey-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.splash-image-container {
+  text-align: center;
+  margin: 4rem;
+}
+
+.splash-image-container > *:nth-child(1) {
+  margin: 0;
+}
+.splash-image-container > *:nth-child(2) {
+  margin: -3rem -7.4rem;
+}

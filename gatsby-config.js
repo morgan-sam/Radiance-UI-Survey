@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Curology`,
+    description: `Treat Acne, Fine Lines and More | Curology Custom Skincare | Start Your Free Trial`,
+    author: `@curology`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

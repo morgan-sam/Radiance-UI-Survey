@@ -13,7 +13,10 @@ import "../css/index.css"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="splash-image-container">
+    <div className="splash">
+      <img className="splash-image"></img>
+    </div>
+    <div className="layered-images">
       <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" />
       <img src="https://images.unsplash.com/photo-1556229162-5c63ed9c4efb?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" />
     </div>

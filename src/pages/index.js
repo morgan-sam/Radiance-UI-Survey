@@ -36,6 +36,26 @@ const IndexPage = () => (
           rotation_upper: 40,
         }}
       />
+      <Pattern
+        img={blob}
+        color={{
+          hue: 80,
+          saturation: 80,
+          lightness: 70,
+        }}
+        params={{
+          canvas_width: 485,
+          canvas_height: 755,
+          shape_scale: 5,
+          x_gap: 2,
+          y_gap: 2,
+          coverage: 100,
+          random_x_offset: 0,
+          random_y_offset: 0,
+          rotation_lower: -40,
+          rotation_upper: 40,
+        }}
+      />
       <img src="https://images.unsplash.com/photo-1570554520913-ce2192a74574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" />
     </div>
     <div className="survey-box">

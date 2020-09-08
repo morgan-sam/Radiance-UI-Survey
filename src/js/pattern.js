@@ -7,14 +7,12 @@ export const loadImage = async imgURL => {
   })
 }
 
-export const drawPattern = (img, color, params) => {
-  drawCanvasBackground(color, params)
-  drawAllShapes(img, params)
+export const drawPattern = (img, color, params, getContext) => {
+  drawCanvasBackground(color, params, getContext)
+  drawAllShapes(img, params, getContext)
 }
 
-const getContext = () => document.getElementById("myCanvas").getContext("2d")
-
-const drawCanvasBackground = (color, params) => {
+const drawCanvasBackground = (color, params, getContext) => {
   const { hue, saturation, lightness } = color
   const { canvas_width, canvas_height } = params
   const ctx = getContext()
@@ -55,7 +53,7 @@ const calculateYPosition = (height, i, perRow, params) => {
   )
 }
 
-const drawAllShapes = (img, params) => {
+const drawAllShapes = (img, params, getContext) => {
   const { coverage } = params
   const { width, height, perRow, perColumn } = calculatePatternInfo(img, params)
   for (let i = 0; i < perRow * perColumn; i++) {
@@ -63,12 +61,12 @@ const drawAllShapes = (img, params) => {
       const x = calculateXPosition(width, i, perRow, params)
       const y = calculateYPosition(height, i, perRow, params)
       const rotation = calculateRotation(params)
-      drawSvg(img, x, y, rotation, width, height)
+      drawSvg(img, x, y, rotation, width, height, getContext)
     }
   }
 }
 
-const drawSvg = (img, x, y, rotation, width, height) => {
+const drawSvg = (img, x, y, rotation, width, height, getContext) => {
   const ctx = getContext()
   ctx.translate(x, y)
   ctx.rotate(degreesToRadians(rotation))

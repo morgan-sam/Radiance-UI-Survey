@@ -63,6 +63,12 @@ img {
   background-position: left 60%;
 }
 
+.explanation-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .survey-box {
   display: flex;
   align-items: center;

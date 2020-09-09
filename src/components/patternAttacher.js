@@ -61,10 +61,10 @@ const PatternAttacher = props => {
           params={{
             shape_scale: 4.5,
             x_gap: 2,
-            y_gap: 2.4,
+            y_gap: 2.5,
             coverage: 100,
             random_x_offset: 30,
-            random_y_offset: 30,
+            random_y_offset: 60,
             rotation_lower: -180,
             rotation_upper: 180,
           }}

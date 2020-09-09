@@ -18,9 +18,7 @@ const IndexPage = () => (
     <div className="splash">
       <img className="splash-image"></img>
     </div>
-    <div className="layered-images">
-      <PatternAttacher src={imgURL} />
-    </div>
+    <PatternAttacher src={imgURL} x={"3rem"} y={"3rem"} />
     <div className="survey-box">
       <Typography.Display>Display</Typography.Display>
       <Callout.Container>

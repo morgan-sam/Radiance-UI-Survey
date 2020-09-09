@@ -69,15 +69,3 @@ img {
   justify-content: center;
   flex-direction: column;
 }
-
-.layered-images {
-  text-align: center;
-  margin: 4rem;
-}
-
-.layered-images > *:nth-child(1) {
-  margin: 0;
-}
-.layered-images > *:nth-child(2) {
-  margin: 0;
-}

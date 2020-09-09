@@ -3,7 +3,7 @@ import { loadImage, drawPattern } from "../js/pattern"
 
 const Pattern = props => {
   const patternRef = useRef(null)
-  const { img, color, width, height } = props
+  const { img, color, width, height, style } = props
 
   const getContext = () => patternRef.current.getContext("2d")
 
@@ -22,7 +22,13 @@ const Pattern = props => {
   }, [img])
 
   return (
-    <canvas ref={patternRef} className="canvas" width={width} height={height} />
+    <canvas
+      ref={patternRef}
+      className="canvas"
+      style={style}
+      width={width}
+      height={height}
+    />
   )
 }
 

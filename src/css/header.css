@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-header > * {
+  margin: 1rem;
+}
+
+.header-title {
+  margin: 2rem;
+}
+
+.hamburger-button {
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.main-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: fit-content;
+  width: 100vw;
+  background-color: white;
+}
+
+.link-container,
+.login-btn-container {
+  display: flex;
+  justify-content: left;
+}
+.link-container {
+  flex-direction: column;
+}
+.login-btn-container {
+  flex-direction: row;
+}

@@ -3,28 +3,39 @@ import { LinkButton, Button } from "radiance-ui"
 import PropTypes from "prop-types"
 import React from "react"
 
-import "../css/index.css"
+import "../css/header.css"
 
 const Header = ({ siteTitle }) => (
   <header className="header">
-    <h1 className="logo">{siteTitle}</h1>
-    <div className="link-container">
-      <a className="link-text">WHY CUROLOGY</a>
-      <a className="link-text">REVIEWS</a>
-      <a className="link-text">COMMUNITY</a>
-      <a className="link-text">SURVEY</a>
-    </div>
-    <div className="login-btn-container">
-      <a className="link-text">LOG IN</a>
-      <Button.Container>
-        <LinkButton
-          buttonColor={COLORS.statusRed}
-          buttonType="secondary"
-          style={{ minWidth: "0", userSelect: "none" }}
-        >
-          START TRIAL
-        </LinkButton>
-      </Button.Container>
+    <button className="hamburger-button" />
+    <div className="main-header">
+      <h1 className="logo header-title">{siteTitle}</h1>
+      <div className="link-container">
+        <a className="link-text">Why Curology</a>
+        <a className="link-text">Reviews</a>
+        <a className="link-text">Community</a>
+        <a className="link-text">Survey</a>
+      </div>
+      <div className="login-btn-container">
+        <Button.Container>
+          <LinkButton
+            buttonColor={COLORS.statusRed}
+            buttonType="secondary"
+            style={{ minWidth: "4rem", userSelect: "none" }}
+          >
+            LOG IN
+          </LinkButton>
+        </Button.Container>
+        <Button.Container>
+          <LinkButton
+            buttonColor={COLORS.statusRed}
+            buttonType="primary"
+            style={{ minWidth: "4rem", userSelect: "none" }}
+          >
+            START TRIAL
+          </LinkButton>
+        </Button.Container>
+      </div>
     </div>
   </header>
 )

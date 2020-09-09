@@ -1,16 +1,11 @@
 @import url(//db.onlinewebfonts.com/c/f4c9951744c0ef14010218fc1b2f7938?family=Larsseit);
+@import url(//db.onlinewebfonts.com/c/7d63af02c08816194ff9ca408837b97c?family=Larsseit+Light);
 @import url(//db.onlinewebfonts.com/c/4e6177b918ba7f280b5db111d868cc94?family=Larsseit+Thin);
 * {
   font-family: "Larsseit Thin", sans-serif;
 }
-/* * {
+* {
   font-family: "Larsseit", sans-serif;
-} */
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 .logo {
@@ -28,17 +23,16 @@
 .login-btn-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 .login-btn-container > * {
   margin: 1rem;
 }
 .link-text {
+  font-family: "Larsseit Light", sans-serif;
   cursor: pointer;
+  font-size: 1.3rem;
   user-select: none;
-}
-.link-text:hover {
-  border-bottom: 1px solid #332e54;
+  color: #332e54;
 }
 
 img {
@@ -47,6 +41,10 @@ img {
 }
 
 .splash {
+  z-index: -4;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: block;
   width: 100%;
   height: 40rem;

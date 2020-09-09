@@ -18,7 +18,7 @@ const IndexPage = () => (
     <div className="splash">
       <img className="splash-image"></img>
     </div>
-    <div className="explanation-box">
+    {/* <div className="explanation-box">
       <PatternAttacher src={imgURL} x={"3rem"} y={"3rem"} />
     </div>
     <div className="survey-box">
@@ -34,7 +34,7 @@ const IndexPage = () => (
         <Button>Primary Button</Button>
       </Button.Container>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
+    <Link to="/page-2/">Go to page 2</Link> <br /> */}
   </Layout>
 )
 

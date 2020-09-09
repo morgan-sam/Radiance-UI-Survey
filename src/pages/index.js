@@ -24,7 +24,7 @@ const IndexPage = () => (
           lightness: 70,
         }}
         params={{
-          canvas_width: 485,
+          canvas_width: 450,
           canvas_height: 755,
           shape_scale: 5,
           x_gap: 2,
@@ -44,7 +44,7 @@ const IndexPage = () => (
           lightness: 70,
         }}
         params={{
-          canvas_width: 485,
+          canvas_width: 450,
           canvas_height: 755,
           shape_scale: 5,
           x_gap: 2,

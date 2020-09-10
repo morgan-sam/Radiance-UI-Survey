@@ -23,13 +23,16 @@ const IndexPage = () => (
         <div className="splash-sub-text">
           Take a quick survey to see if we can help.
         </div>
-        <LinkButton
-          buttonColor={COLORS.statusRed}
-          buttonType="primary"
-          style={{ minWidth: "4rem", userSelect: "none" }}
-        >
-          TAKE SURVEY
-        </LinkButton>
+        <div className="survey-container">
+          <LinkButton
+            buttonColor={COLORS.statusRed}
+            buttonType="primary"
+            style={{ minWidth: "4rem", userSelect: "none" }}
+          >
+            TAKE SURVEY
+          </LinkButton>
+          <a className="survey-privacy-text">Privacy Policy</a>
+        </div>
       </div>
     </div>
     {/* {/* <div className="explanation-box">

@@ -5,12 +5,16 @@ import React, { useState } from "react"
 
 import "../css/header.css"
 import Cancel from "../svg/cancel.svg"
+import Hamburger from "../svg/hamburger.svg"
 
 const Header = ({ siteTitle }) => {
   const [open, setOpen] = useState(true)
   return (
     <header className="header">
-      <button className="hamburger-button" onClick={() => setOpen(true)} />
+      <div className="mobile-header">
+        <h1 className="logo header-title">{siteTitle}</h1>
+        <Hamburger className="hamburger-button" onClick={() => setOpen(true)} />
+      </div>
       <div className={`main-header ${open ? "open" : null}`}>
         <div className="title-container">
           <h1 className="logo header-title">{siteTitle}</h1>

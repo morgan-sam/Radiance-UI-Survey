@@ -8,10 +8,10 @@
 }
 
 .hamburger-button {
-  width: 3rem;
-  height: 3rem;
+  width: 1.5rem;
+  height: 1.5rem;
   overflow: hidden;
-  border: 1px solid black;
+  fill: #332e54;
 }
 
 .main-header {
@@ -48,9 +48,14 @@
   fill: #332e54;
 }
 
-.title-container {
+.title-container,
+.mobile-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
+}
+
+.mobile-header {
+  width: 100vw;
 }

@@ -61,6 +61,27 @@ body {
   background-position: 42% 62%;
 }
 
+.splash-text-container {
+  position: absolute;
+  top: 38%;
+  right: 10%;
+  width: 10rem;
+  padding: 2rem;
+  color: #332e54;
+}
+
+.splash-main-text {
+  font-size: 2rem;
+}
+.splash-sub-text {
+  font-family: "Larsseit Light", sans-serif;
+  font-size: 1rem;
+}
+
+.splash-text-container > * {
+  margin: 1.5rem 0;
+}
+
 @media only screen and (min-width: 600px) {
   img {
     height: 40rem;

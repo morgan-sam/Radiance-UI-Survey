@@ -35,7 +35,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    {/* {/* <div className="explanation-box">
+    {/* <div className="explanation-box">
       <PatternAttacher src={imgURL} x={"3rem"} y={"3rem"} />
     </div> */}
     {/* <div className="survey-box">

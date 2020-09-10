@@ -4,8 +4,8 @@ import PropTypes from "prop-types"
 import React, { useState } from "react"
 
 import "../css/header.css"
-import Cancel from "../svg/cancel.svg"
-import Hamburger from "../svg/hamburger.svg"
+import cancel from "../svg/cancel.svg"
+import hamburger from "../svg/hamburger.svg"
 
 const Header = ({ siteTitle }) => {
   const [open, setOpen] = useState(true)
@@ -13,12 +13,16 @@ const Header = ({ siteTitle }) => {
     <header className="header">
       <div className="mobile-header">
         <h1 className="logo">{siteTitle}</h1>
-        <Hamburger className="hamburger-button" onClick={() => setOpen(true)} />
+        <img
+          src={hamburger}
+          className="hamburger-button"
+          onClick={() => setOpen(true)}
+        />
       </div>
       <div className={`main-header ${open ? "open" : null}`}>
         <div className="title-container">
           <h1 className="logo">{siteTitle}</h1>
-          <Cancel className="cross" onClick={() => setOpen(false)} />
+          <img src={cancel} className="cross" onClick={() => setOpen(false)} />
         </div>
         <div className="link-container">
           <a className="link-text">Why Curology</a>

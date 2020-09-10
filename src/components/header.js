@@ -1,48 +1,51 @@
 import COLORS from "tinycolor2"
 import { LinkButton, Button } from "radiance-ui"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useState } from "react"
 
 import "../css/header.css"
 import Cancel from "../svg/cancel.svg"
 
-const Header = ({ siteTitle }) => (
-  <header className="header">
-    <button className="hamburger-button" />
-    <div className="main-header">
-      <div className="title-container">
-        <h1 className="logo header-title">{siteTitle}</h1>
-        <Cancel className="cross" />
+const Header = ({ siteTitle }) => {
+  const [open, setOpen] = useState(true)
+  return (
+    <header className="header">
+      <button className="hamburger-button" onClick={() => setOpen(true)} />
+      <div className={`main-header ${open ? "open" : null}`}>
+        <div className="title-container">
+          <h1 className="logo header-title">{siteTitle}</h1>
+          <Cancel className="cross" onClick={() => setOpen(false)} />
+        </div>
+        <div className="link-container">
+          <a className="link-text">Why Curology</a>
+          <a className="link-text">Reviews</a>
+          <a className="link-text">Community</a>
+          <a className="link-text">Survey</a>
+        </div>
+        <div className="login-btn-container">
+          <Button.Container>
+            <LinkButton
+              buttonColor={COLORS.statusRed}
+              buttonType="secondary"
+              style={{ minWidth: "4rem", userSelect: "none" }}
+            >
+              LOG IN
+            </LinkButton>
+          </Button.Container>
+          <Button.Container>
+            <LinkButton
+              buttonColor={COLORS.statusRed}
+              buttonType="primary"
+              style={{ minWidth: "4rem", userSelect: "none" }}
+            >
+              START TRIAL
+            </LinkButton>
+          </Button.Container>
+        </div>
       </div>
-      <div className="link-container">
-        <a className="link-text">Why Curology</a>
-        <a className="link-text">Reviews</a>
-        <a className="link-text">Community</a>
-        <a className="link-text">Survey</a>
-      </div>
-      <div className="login-btn-container">
-        <Button.Container>
-          <LinkButton
-            buttonColor={COLORS.statusRed}
-            buttonType="secondary"
-            style={{ minWidth: "4rem", userSelect: "none" }}
-          >
-            LOG IN
-          </LinkButton>
-        </Button.Container>
-        <Button.Container>
-          <LinkButton
-            buttonColor={COLORS.statusRed}
-            buttonType="primary"
-            style={{ minWidth: "4rem", userSelect: "none" }}
-          >
-            START TRIAL
-          </LinkButton>
-        </Button.Container>
-      </div>
-    </div>
-  </header>
-)
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

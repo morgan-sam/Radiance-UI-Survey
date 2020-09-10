@@ -38,8 +38,8 @@ const IndexPage = () => (
     <div className="explanation-box">
       <PatternAttacher
         src={imgURL}
-        x={"3rem"}
-        y={"3rem"}
+        x={"-3rem"}
+        y={"-3rem"}
         width={"80vw"}
         style={{ margin: "5rem" }}
       />

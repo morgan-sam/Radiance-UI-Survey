@@ -24,8 +24,8 @@ const PatternAttacher = props => {
 
   const containerStyle = {
     position: "relative",
-    width: `calc(${width}px + ${x.replace("-", "")})`,
-    height: `calc(${height}px + ${y.replace("-", "")})`,
+    width: `calc(${width}px + calc(${x.replace("-", "")}*2))`,
+    height: `calc(${height}px + calc(${y.replace("-", "")}*2))`,
   }
 
   const xPos = parseInt(x) < 0
@@ -35,10 +35,9 @@ const PatternAttacher = props => {
     position: "absolute",
     width: imgWidth,
     height: imgHeight,
-    top: yPos ? null : "0",
-    right: xPos ? "0" : null,
-    bottom: yPos ? "0" : null,
-    left: xPos ? null : "0",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%,-50%)",
   }
 
   const patternStyle = {

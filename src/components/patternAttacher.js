@@ -4,6 +4,8 @@ import blob from "../svg/blob.svg"
 
 const PatternAttacher = props => {
   const { x, y } = props
+  const imgHeight = props.height
+  const imgWidth = props.width
 
   const imgRef = useRef(null)
   const [imgLoaded, setImgLoaded] = useState(false)
@@ -31,6 +33,8 @@ const PatternAttacher = props => {
 
   const imgStyle = {
     position: "absolute",
+    width: imgWidth,
+    height: imgHeight,
     top: yPos ? null : "0",
     right: xPos ? "0" : null,
     bottom: yPos ? "0" : null,
@@ -46,36 +50,38 @@ const PatternAttacher = props => {
   }
 
   return (
-    <div style={containerStyle}>
-      {loadPattern && (
-        <Pattern
-          style={patternStyle}
-          img={blob}
-          color={{
-            hue: 80,
-            saturation: 80,
-            lightness: 70,
-          }}
-          width={width}
-          height={height}
-          params={{
-            shape_scale: 4.5,
-            x_gap: 2,
-            y_gap: 2.5,
-            coverage: 100,
-            random_x_offset: 30,
-            random_y_offset: 60,
-            rotation_lower: -180,
-            rotation_upper: 180,
-          }}
+    <div style={props.style}>
+      <div style={containerStyle}>
+        {loadPattern && (
+          <Pattern
+            style={patternStyle}
+            img={blob}
+            color={{
+              hue: 80,
+              saturation: 80,
+              lightness: 70,
+            }}
+            width={width}
+            height={height}
+            params={{
+              shape_scale: 4.5,
+              x_gap: 1.8,
+              y_gap: 3,
+              coverage: 100,
+              random_x_offset: 30,
+              random_y_offset: 60,
+              rotation_lower: -180,
+              rotation_upper: 180,
+            }}
+          />
+        )}
+        <img
+          style={imgStyle}
+          ref={imgRef}
+          onLoad={() => setImgLoaded(true)}
+          src={props.src}
         />
-      )}
-      <img
-        style={imgStyle}
-        ref={imgRef}
-        onLoad={() => setImgLoaded(true)}
-        src={props.src}
-      />
+      </div>
     </div>
   )
 }

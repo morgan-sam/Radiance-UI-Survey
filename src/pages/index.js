@@ -36,7 +36,13 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="explanation-box">
-      <PatternAttacher src={imgURL} x={"1rem"} y={"0rem"} />
+      <PatternAttacher
+        src={imgURL}
+        x={"3rem"}
+        y={"3rem"}
+        width={"80vw"}
+        style={{ margin: "5rem" }}
+      />
     </div>
     {/* <div className="survey-box">
       <Typography.Display>Display</Typography.Display>

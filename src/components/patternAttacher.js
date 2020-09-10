@@ -3,7 +3,7 @@ import Pattern from "../components/pattern"
 import blob from "../svg/blob.svg"
 
 const PatternAttacher = props => {
-  const { x, y } = props
+  const { x, y, scale } = props
 
   const imgRef = useRef(null)
   const [imgLoaded, setImgLoaded] = useState(false)
@@ -24,6 +24,7 @@ const PatternAttacher = props => {
     position: "relative",
     width: `calc(${width}px + ${x.replace("-", "")})`,
     height: `calc(${height}px + ${y.replace("-", "")})`,
+    transform: `scale(${scale})`,
   }
 
   const xPos = parseInt(x) < 0

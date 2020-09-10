@@ -35,9 +35,9 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    {/* <div className="explanation-box">
-      <PatternAttacher src={imgURL} x={"3rem"} y={"3rem"} />
-    </div> */}
+    <div className="explanation-box">
+      <PatternAttacher src={imgURL} x={"3rem"} y={"3rem"} scale={"0.8"} />
+    </div>
     {/* <div className="survey-box">
       <Typography.Display>Display</Typography.Display>
       <Callout.Container>

@@ -7,10 +7,6 @@
   margin: 1rem;
 }
 
-.header-title {
-  margin: 2rem;
-}
-
 .hamburger-button {
   width: 3rem;
   height: 3rem;
@@ -37,4 +33,17 @@
 }
 .login-btn-container {
   flex-direction: row;
+}
+
+.cross {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: #332e54;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
 }

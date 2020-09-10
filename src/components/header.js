@@ -4,12 +4,16 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import "../css/header.css"
+import Cancel from "../svg/cancel.svg"
 
 const Header = ({ siteTitle }) => (
   <header className="header">
     <button className="hamburger-button" />
     <div className="main-header">
-      <h1 className="logo header-title">{siteTitle}</h1>
+      <div className="title-container">
+        <h1 className="logo header-title">{siteTitle}</h1>
+        <Cancel className="cross" />
+      </div>
       <div className="link-container">
         <a className="link-text">Why Curology</a>
         <a className="link-text">Reviews</a>

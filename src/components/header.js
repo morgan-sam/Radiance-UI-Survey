@@ -12,12 +12,12 @@ const Header = ({ siteTitle }) => {
   return (
     <header className="header">
       <div className="mobile-header">
-        <h1 className="logo header-title">{siteTitle}</h1>
+        <h1 className="logo">{siteTitle}</h1>
         <Hamburger className="hamburger-button" onClick={() => setOpen(true)} />
       </div>
       <div className={`main-header ${open ? "open" : null}`}>
         <div className="title-container">
-          <h1 className="logo header-title">{siteTitle}</h1>
+          <h1 className="logo">{siteTitle}</h1>
           <Cancel className="cross" onClick={() => setOpen(false)} />
         </div>
         <div className="link-container">

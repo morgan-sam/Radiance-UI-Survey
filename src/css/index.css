@@ -47,6 +47,7 @@ body {
 }
 
 .splash {
+  position: relative;
   width: 100%;
   height: 37rem;
   background-color: #d1c3ee;
@@ -63,7 +64,7 @@ body {
 
 .splash-text-container {
   position: absolute;
-  top: 36%;
+  top: 30%;
   right: 10%;
   width: 10rem;
   padding: 2rem;
@@ -98,6 +99,14 @@ body {
   margin: 1rem;
 }
 
+.explanation-box {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  width: 100vw;
+  overflow: hidden;
+}
+
 @media only screen and (min-width: 600px) {
   img {
     height: 40rem;
@@ -106,12 +115,6 @@ body {
 
   .splash-image {
     background-position: left 60%;
-  }
-
-  .explanation-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .survey-box {

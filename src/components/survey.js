@@ -1,5 +1,5 @@
 import React from "react"
-import { ImmersiveModal, Button } from "radiance-ui"
+import { ImmersiveModal, Button, OptionButton } from "radiance-ui"
 import { lorem } from "../js/lorem"
 
 const modalHeaderImage =
@@ -23,6 +23,20 @@ const Survey = props => {
       </p>
       <p>Question 1:</p>
       <p>{lorem(10)}?</p>
+      <OptionButton
+        selected={false}
+        text="Checkbox helper text"
+        onClick={() => undefined}
+        optionType="checkbox"
+        buttonType="primary"
+      />
+      <OptionButton
+        selected={true}
+        text="Checkbox helper text"
+        onClick={() => undefined}
+        optionType="checkbox"
+        buttonType="primary"
+      />
       <p>Question 2:</p>
       <p>{lorem(10)}?</p>
       <p>Question 3:</p>

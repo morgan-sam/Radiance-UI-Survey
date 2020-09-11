@@ -38,7 +38,7 @@ const IndexPage = () => (
     </div>
     <div className="section">
       <div className="explanation-box">
-        <div className="section-title">{lorem(10)}</div>
+        <div className="section-title">{lorem(7)}</div>
         <PatternAttacher
           src={imgURL}
           x={"-3rem"}

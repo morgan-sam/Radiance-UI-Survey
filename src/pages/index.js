@@ -1,15 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Button } from "radiance-ui"
+
 import { PlanIcon, GiftIcon, SmileIcon } from "radiance-ui/lib/icons"
-import { Callout, Typography } from "radiance-ui"
+import { Button, Callout, Typography } from "radiance-ui"
 import "../css/index.css"
-import PatternAttacher from "../components/patternAttacher"
+
 import COLORS from "tinycolor2"
+
+import PatternAttacher from "../components/patternAttacher"
 import List from "../components/list"
+
 import { lorem } from "../js/lorem"
+
 import blob from "../svg/blob.svg"
 import star from "../svg/star.svg"
 
@@ -121,8 +124,6 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    {/*
-    <Link to="/page-2/">Go to page 2</Link> <br /> */}
   </Layout>
 )
 

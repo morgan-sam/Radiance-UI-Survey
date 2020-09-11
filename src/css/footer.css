@@ -2,3 +2,19 @@
   background: #f8f8fa;
   padding: 3rem;
 }
+
+.footer-links-horizontal {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.footer-link-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+
+.footer-link {
+  margin: 1rem 0;
+}

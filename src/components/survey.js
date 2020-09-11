@@ -13,14 +13,30 @@ const Survey = props => {
       headerImage={<img src={modalHeaderImage} alt="header" />}
       footerContent={
         <Button.Container>
-          <Button>Next Page</Button>
+          <Button>Submit</Button>
         </Button.Container>
       }
       title="Curology Survey"
     >
-      <p>{lorem(40)}</p>
-      <p>{lorem(40)}</p>
-      <p>{lorem(40)}</p>
+      <p>
+        Thank you for taking our survey. It will take approximately 2-3 minutes.
+      </p>
+      <p>Question 1:</p>
+      <p>{lorem(10)}?</p>
+      <p>Question 2:</p>
+      <p>{lorem(10)}?</p>
+      <p>Question 3:</p>
+      <p>{lorem(10)}?</p>
+      <p>Question 4:</p>
+      <p>{lorem(10)}?</p>
+      <p>Question 5:</p>
+      <p>{lorem(10)}?</p>
+      <p>Question 6:</p>
+      <p>{lorem(10)}?</p>
+      <p>Question 7:</p>
+      <p>{lorem(10)}?</p>
+      <p>Question 8:</p>
+      <p>{lorem(10)}?</p>
     </ImmersiveModal>
   )
 }

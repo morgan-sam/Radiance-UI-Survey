@@ -1,6 +1,8 @@
 @import url(//db.onlinewebfonts.com/c/f4c9951744c0ef14010218fc1b2f7938?family=Larsseit);
 @import url(//db.onlinewebfonts.com/c/7d63af02c08816194ff9ca408837b97c?family=Larsseit+Light);
 @import url(//db.onlinewebfonts.com/c/4e6177b918ba7f280b5db111d868cc94?family=Larsseit+Thin);
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
+
 * {
   font-family: "Larsseit Thin", sans-serif;
 }
@@ -50,6 +52,7 @@ body {
 }
 
 .section {
+  position: relative;
   margin: 2rem 0;
   display: flex;
   flex-direction: column;
@@ -148,6 +151,18 @@ body {
 
 .fill-image {
   width: 100vw;
+}
+
+.white-overlay-text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+  z-index: 20;
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-size: 1.9rem;
 }
 
 @media only screen and (min-width: 600px) {

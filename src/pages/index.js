@@ -72,6 +72,7 @@ const IndexPage = () => (
     </div>
     <div className="section">
       <div className="fill-section"></div>
+      <div className="white-overlay-text">{lorem(7)}</div>
       <img src={thirdImage} className="fill-image" />
     </div>
     <div className="section">

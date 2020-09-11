@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { ImmersiveModal, Button, Callout, Typography } from "radiance-ui"
+import { Button, Callout, Typography } from "radiance-ui"
 import { PlanIcon, GiftIcon, SmileIcon } from "radiance-ui/lib/icons"
 
 import COLORS from "tinycolor2"
@@ -11,6 +11,7 @@ import "../css/index.css"
 
 import PatternAttacher from "../components/patternAttacher"
 import List from "../components/list"
+import Survey from "../components/survey"
 
 import { lorem } from "../js/lorem"
 
@@ -25,8 +26,6 @@ const thirdImage =
   "https://images.unsplash.com/photo-1556227703-cb5f1596c6b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
 const fourthImage =
   "https://images.unsplash.com/photo-1556228578-626e9590b81f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-const modalHeaderImage =
-  "https://images.unsplash.com/photo-1556228852-80b6e5eeff06?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
 
 const IndexPage = () => {
   const [surveyOpen, setSurveyOpen] = useState(false)
@@ -34,22 +33,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      {surveyOpen && (
-        <ImmersiveModal
-          onClose={() => setSurveyOpen(false)}
-          headerImage={<img src={modalHeaderImage} alt="header" />}
-          footerContent={
-            <Button.Container>
-              <Button>Next Page</Button>
-            </Button.Container>
-          }
-          title="Curology Survey"
-        >
-          <p>{lorem(40)}</p>
-          <p>{lorem(40)}</p>
-          <p>{lorem(40)}</p>
-        </ImmersiveModal>
-      )}
+      {surveyOpen && <Survey {...{ surveyOpen, setSurveyOpen }} />}
       <div className="section splash">
         <img className="splash-image"></img>
         <div className="splash-text-container">

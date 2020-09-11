@@ -3,6 +3,12 @@
   padding: 0rem 2rem;
 }
 
+.footer-logo {
+  color: #332e54;
+  margin: 2rem 0;
+  font-size: 1.7rem;
+}
+
 .footer-links-horizontal {
   display: flex;
   width: 100%;

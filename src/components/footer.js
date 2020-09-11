@@ -13,7 +13,7 @@ const Footer = ({ siteTitle }) => {
   return (
     <div className="footer">
       <div className="footer-section">
-        <h1 className="logo">{siteTitle}</h1>
+        <h1 className="footer-logo">{siteTitle}</h1>
         <div className="footer-links-horizontal">
           <div className="footer-link-container">
             <a className="footer-link">Why Curology</a>

@@ -15,6 +15,13 @@
   margin-right: 2rem;
 }
 
+.footer-link-container:first-child {
+  color: #332e54;
+}
+.footer-link-container:last-child {
+  color: #706d87;
+}
+
 .footer-link {
   margin: 1rem 0;
 }

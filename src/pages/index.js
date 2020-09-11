@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { LinkButton, Button } from "radiance-ui"
+import { Button } from "radiance-ui"
 import { PlanIcon, GiftIcon, SmileIcon } from "radiance-ui/lib/icons"
 import { Callout, Typography } from "radiance-ui"
 import "../css/index.css"
@@ -33,13 +33,13 @@ const IndexPage = () => (
           Take a quick survey to see if we can help.
         </div>
         <div className="survey-container">
-          <LinkButton
+          <Button
             buttonColor={COLORS.statusRed}
             buttonType="primary"
             style={{ minWidth: "4rem", userSelect: "none" }}
           >
             TAKE SURVEY
-          </LinkButton>
+          </Button>
           <a className="survey-privacy-text">Privacy Policy</a>
         </div>
       </div>
@@ -109,13 +109,13 @@ const IndexPage = () => (
           <div className="toast-text-title">{lorem(4)}</div>
           <List items={new Array(4).fill(lorem(6))} />
           <div className="survey-container">
-            <LinkButton
+            <Button
               buttonColor={COLORS.statusRed}
               buttonType="primary"
               style={{ minWidth: "4rem", userSelect: "none" }}
             >
               TAKE SURVEY
-            </LinkButton>
+            </Button>
             <a className="survey-privacy-text">Privacy Policy</a>
           </div>
         </div>

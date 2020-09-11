@@ -8,7 +8,7 @@ import cancel from "../svg/cancel.svg"
 import hamburger from "../svg/hamburger.svg"
 
 const Header = ({ siteTitle }) => {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
   return (
     <header className="header">
       <div className="mobile-header">

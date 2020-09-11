@@ -75,7 +75,7 @@ const IndexPage = () => (
       <div className="white-overlay-text">{lorem(7)}</div>
       <img src={thirdImage} className="fill-image" />
     </div>
-    <div className="section">
+    <div className="section callouts">
       <div className="callout-container">
         <Typography.Display>{lorem(2)}</Typography.Display>
         <Callout.Container>

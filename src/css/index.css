@@ -50,6 +50,24 @@ body {
   overflow: hidden;
 }
 
+/* Section 1 & 5 */
+
+.survey-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 1rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.survey-privacy-text {
+  font-family: "Larsseit", sans-serif;
+  color: #878492;
+  font-size: 0.7rem;
+  margin: 1rem;
+}
+
 /* Section 1: Splash */
 
 .section:first-child {
@@ -114,22 +132,6 @@ body {
 
 .splash-text-container > * {
   margin: 1.5rem 0;
-}
-
-.survey-container {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  margin: 1rem 0;
-  align-items: center;
-  justify-content: center;
-}
-
-.survey-privacy-text {
-  font-family: "Larsseit", sans-serif;
-  color: #878492;
-  font-size: 0.7rem;
-  margin: 1rem;
 }
 
 .pre-gradient {

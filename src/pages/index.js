@@ -29,15 +29,14 @@ const modalHeaderImage =
   "https://images.unsplash.com/photo-1556228852-80b6e5eeff06?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
 
 const IndexPage = () => {
-  const [openModal, setOpenModal] = useState(false)
-  console.log(openModal)
+  const [surveyOpen, setSurveyOpen] = useState(false)
 
   return (
     <Layout>
       <SEO title="Home" />
-      {openModal && (
+      {surveyOpen && (
         <ImmersiveModal
-          onClose={() => setOpenModal(false)}
+          onClose={() => setSurveyOpen(false)}
           headerImage={<img src={modalHeaderImage} alt="header" />}
           footerContent={
             <Button.Container>
@@ -46,7 +45,9 @@ const IndexPage = () => {
           }
           title="Curology Survey"
         >
-          <p>Lorem ipsum dolor sit...</p>
+          <p>{lorem(40)}</p>
+          <p>{lorem(40)}</p>
+          <p>{lorem(40)}</p>
         </ImmersiveModal>
       )}
       <div className="section splash">
@@ -60,7 +61,7 @@ const IndexPage = () => {
             <Button
               buttonColor={COLORS.statusRed}
               buttonType="primary"
-              onClick={() => setOpenModal(true)}
+              onClick={() => setSurveyOpen(true)}
               style={{ minWidth: "4rem", userSelect: "none" }}
             >
               TAKE SURVEY
@@ -137,7 +138,7 @@ const IndexPage = () => {
               <Button
                 buttonColor={COLORS.statusRed}
                 buttonType="primary"
-                onClick={() => setOpenModal(true)}
+                onClick={() => setSurveyOpen(true)}
                 style={{ minWidth: "4rem", userSelect: "none" }}
               >
                 TAKE SURVEY

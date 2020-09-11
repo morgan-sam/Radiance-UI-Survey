@@ -225,11 +225,12 @@ body {
 }
 
 .toast-text-container {
+  width: 100%;
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
-  margin: 5rem;
+  flex-direction: column;
+  margin: 5rem 0;
 }
 
 .toast-text-title {

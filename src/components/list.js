@@ -1,12 +1,16 @@
 import React from "react"
 import "../css/list.css"
+import tick from "../svg/tick.svg"
 
 const List = props => {
   const { items } = props
   return (
     <ul className="list">
       {items.map(el => (
-        <li className="list-item">{el}</li>
+        <li className="list-item">
+          <img src={tick} className="list-tick" />
+          {el}
+        </li>
       ))}
     </ul>
   )

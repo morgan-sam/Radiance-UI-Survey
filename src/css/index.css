@@ -20,14 +20,6 @@
   font-size: 1.4rem;
 }
 
-.link-text {
-  font-family: "Larsseit Light", sans-serif;
-  cursor: pointer;
-  font-size: 1.3rem;
-  user-select: none;
-  color: #332e54;
-}
-
 body {
   position: relative;
   margin: 0;

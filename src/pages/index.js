@@ -9,6 +9,7 @@ import "../css/index.css"
 import PatternAttacher from "../components/patternAttacher"
 import blob from "../svg/blob.svg"
 import COLORS from "tinycolor2"
+import { lorem } from "../js/lorem"
 
 const imgURL =
   "https://images.unsplash.com/photo-1570554520913-ce2192a74574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
@@ -16,7 +17,7 @@ const imgURL =
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="splash">
+    <div className="section splash">
       <img className="splash-image"></img>
       <div className="splash-text-container">
         <div className="splash-main-text">Need a check up?</div>
@@ -35,14 +36,16 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <div className="explanation-box">
-      <PatternAttacher
-        src={imgURL}
-        x={"-3rem"}
-        y={"-3rem"}
-        height={"30rem"}
-        style={{ margin: "5rem" }}
-      />
+    <div className="section">
+      <div className="explanation-box">
+        <div className="section-title">{lorem(10)}</div>
+        <PatternAttacher
+          src={imgURL}
+          x={"-3rem"}
+          y={"-3rem"}
+          height={"30rem"}
+        />
+      </div>
     </div>
     {/* <div className="survey-box">
       <Typography.Display>Display</Typography.Display>

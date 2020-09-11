@@ -74,6 +74,13 @@ body {
 .splash-main-text {
   font-size: 2rem;
 }
+
+.section-title {
+  font-family: "Larsseit Light", sans-serif;
+  font-size: 2rem;
+  margin: 2rem;
+  color: #332e54;
+}
 .splash-sub-text {
   font-family: "Larsseit Light", sans-serif;
   font-size: 1rem;
@@ -101,7 +108,8 @@ body {
 
 .explanation-box {
   display: flex;
-  align-items: left;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 100vw;
   overflow: hidden;

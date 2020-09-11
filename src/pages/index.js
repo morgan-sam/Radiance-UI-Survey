@@ -11,8 +11,10 @@ import blob from "../svg/blob.svg"
 import COLORS from "tinycolor2"
 import { lorem } from "../js/lorem"
 
-const imgURL =
+const firstImage =
   "https://images.unsplash.com/photo-1570554520913-ce2192a74574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+const secondImage =
+  "https://images.unsplash.com/photo-1556228720-950d08a2a516?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
 
 const IndexPage = () => (
   <Layout>
@@ -44,13 +46,27 @@ const IndexPage = () => (
         </div>
         <div className="section-title">{lorem(5)}</div>
         <PatternAttacher
-          src={imgURL}
+          src={firstImage}
+          x={"-3rem"}
+          y={"-3rem"}
+          height={"30rem"}
+        />
+      </div>
+      <div className="explanation-box">
+        <div className="explanation-text-box">
+          <div className="section-title">{lorem(7)}</div>
+          <div className="section-paragraph">{lorem(36)}</div>
+        </div>
+        <div className="section-title">{lorem(5)}</div>
+        <PatternAttacher
+          src={secondImage}
           x={"-3rem"}
           y={"-3rem"}
           height={"30rem"}
         />
       </div>
     </div>
+
     {/* <div className="survey-box">
       <Typography.Display>Display</Typography.Display>
       <Callout.Container>

@@ -17,6 +17,9 @@ const firstImage =
 const secondImage =
   "https://images.unsplash.com/photo-1556228720-950d08a2a516?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
 
+const thirdImage =
+  "https://images.unsplash.com/photo-1556227703-cb5f1596c6b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -67,20 +70,26 @@ const IndexPage = () => (
         color={"hsl(47,70%,65%)"}
       />
     </div>
-
-    {/* <div className="survey-box">
-      <Typography.Display>Display</Typography.Display>
-      <Callout.Container>
-        <Callout icon={<PlanIcon width={32} height={32} />}>
-          <strong>How is your skin?</strong>
-          <br />
-          Take our survey to see if you could do with any help
-        </Callout>
-      </Callout.Container>
-      <Button.Container>
-        <Button>Primary Button</Button>
-      </Button.Container>
+    <div className="section">
+      <div className="fill-section"></div>
+      <img src={thirdImage} className="fill-image" />
     </div>
+    <div className="section">
+      <div className="survey-box">
+        <Typography.Display>Display</Typography.Display>
+        <Callout.Container>
+          <Callout icon={<PlanIcon width={32} height={32} />}>
+            <strong>{lorem(4)}</strong>
+            <br />
+            Take our survey to see if you could do with any help
+          </Callout>
+        </Callout.Container>
+        <Button.Container>
+          <Button>Primary Button</Button>
+        </Button.Container>
+      </div>
+    </div>
+    {/*
     <Link to="/page-2/">Go to page 2</Link> <br /> */}
   </Layout>
 )

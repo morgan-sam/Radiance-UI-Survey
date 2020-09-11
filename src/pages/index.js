@@ -4,9 +4,10 @@ import SEO from "../components/seo"
 
 import { PlanIcon, GiftIcon, SmileIcon } from "radiance-ui/lib/icons"
 import { Button, Callout, Typography } from "radiance-ui"
-import "../css/index.css"
 
 import COLORS from "tinycolor2"
+
+import "../css/index.css"
 
 import PatternAttacher from "../components/patternAttacher"
 import List from "../components/list"

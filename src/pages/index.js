@@ -40,7 +40,7 @@ const IndexPage = () => (
         src={imgURL}
         x={"-3rem"}
         y={"-3rem"}
-        width={"80vw"}
+        height={"30rem"}
         style={{ margin: "5rem" }}
       />
     </div>

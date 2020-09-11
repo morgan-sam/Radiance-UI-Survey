@@ -10,16 +10,14 @@
   font-family: "Larsseit", sans-serif;
 }
 
+/* General Styles */
+
 .logo {
   color: #332e54;
   font-family: "Larsseit", sans-serif;
   font-weight: 400;
   user-select: none;
   font-size: 1.4rem;
-}
-
-.link-container > * {
-  margin: 1rem;
 }
 
 .link-text {
@@ -40,9 +38,6 @@ body {
   height: auto;
   display: block;
 }
-.section:first-child {
-  margin: 0;
-}
 
 .section {
   position: relative;
@@ -53,6 +48,12 @@ body {
   justify-content: center;
   width: 100vw;
   overflow: hidden;
+}
+
+/* Splash: Section 1 */
+
+.section:first-child {
+  margin: 0;
 }
 
 .splash {
@@ -83,6 +84,8 @@ body {
 .splash-main-text {
   font-size: 2rem;
 }
+
+/* Section 2: Testimonies */
 
 .explanation-text-box {
   margin: 1rem;
@@ -129,20 +132,17 @@ body {
   margin: 1rem;
 }
 
-.fill-section {
-  background: linear-gradient(
-    180deg,
-    hsl(261.3, 27.6%, 68%) 0%,
-    hsl(261.3, 27.6%, 68%) 90%,
-    hsla(261.3, 27.6%, 68%, 0%) 100%
-  );
+.pre-gradient {
   height: 15rem;
   width: 100vw;
   margin-bottom: -3rem;
   z-index: 10;
 }
 
-.fill-image {
+/* Section 3 & 5 */
+
+.pocket-guy > img,
+.toast > img {
   width: 100vw;
 }
 
@@ -156,9 +156,23 @@ body {
   color: white;
   font-size: 1.9rem;
 }
+
+/* Section 3: Pocket Guy */
+
+.pocket-guy > .pre-gradient {
+  background: linear-gradient(
+    180deg,
+    hsl(261.3, 27.6%, 68%) 0%,
+    hsl(261.3, 27.6%, 68%) 90%,
+    hsla(261.3, 27.6%, 68%, 0%) 100%
+  );
+}
+
 .pocket-guy > .white-overlay-text {
   top: 10%;
 }
+
+/* Section 4: Callouts */
 
 .callouts {
   margin: 5rem 0;
@@ -183,18 +197,21 @@ body {
   margin: 5px 0;
 }
 
-.toast-gradient {
+/* Section 5: Toast */
+
+.toast > .pre-gradient {
   background: linear-gradient(
     180deg,
     hsl(223, 30%, 77%) 0%,
     hsl(223, 30%, 77%) 80%,
     hsla(223, 30%, 77%, 0%) 100%
   );
-  height: 15rem;
-  width: 100vw;
-  margin-bottom: -3rem;
-  z-index: 10;
 }
+
+.toast > .white-overlay-text {
+  top: 7%;
+}
+
 .toast-after {
   background: linear-gradient(
     180deg,
@@ -205,9 +222,6 @@ body {
   margin-top: -1rem;
   height: 33rem;
   width: 100vw;
-}
-.toast > .white-overlay-text {
-  top: 7%;
 }
 
 @media only screen and (min-width: 600px) {

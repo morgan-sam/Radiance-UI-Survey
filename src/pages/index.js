@@ -72,7 +72,7 @@ const IndexPage = () => (
       />
     </div>
     <div className="section pocket-guy">
-      <div className="fill-section"></div>
+      <div className="pre-gradient"></div>
       <div className="white-overlay-text">{lorem(7)}</div>
       <img src={thirdImage} className="fill-image" />
     </div>
@@ -100,8 +100,8 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="section toast">
-      <div className="toast-gradient"></div>
-      <img src={fourthImage} className="fill-image" />
+      <div className="pre-gradient"></div>
+      <img src={fourthImage} />
       <div className="white-overlay-text">{lorem(7)}</div>
       <div className="toast-after"></div>
     </div>

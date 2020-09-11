@@ -40,6 +40,9 @@
 .link-container {
   flex-direction: column;
 }
+.link-container > * {
+  margin: 1rem;
+}
 .login-btn-container {
   flex-direction: row;
   align-items: center;

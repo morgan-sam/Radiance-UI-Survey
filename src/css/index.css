@@ -165,6 +165,25 @@ body {
   font-size: 1.9rem;
 }
 
+.callout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.callout-container > * {
+  margin: 1rem;
+}
+
+.callout-title {
+  font-family: "Larsseit", sans-serif;
+  margin: 5px 0;
+}
+.callout-paragraph {
+  font-family: "Larsseit Thin", sans-serif;
+  margin: 5px 0;
+}
+
 @media only screen and (min-width: 600px) {
   img {
     height: 40rem;
@@ -173,12 +192,5 @@ body {
 
   .splash-image {
     background-position: left 60%;
-  }
-
-  .survey-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
   }
 }

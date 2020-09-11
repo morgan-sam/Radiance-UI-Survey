@@ -76,18 +76,26 @@ const IndexPage = () => (
       <img src={thirdImage} className="fill-image" />
     </div>
     <div className="section">
-      <div className="survey-box">
-        <Typography.Display>Display</Typography.Display>
+      <div className="callout-container">
+        <Typography.Display>{lorem(2)}</Typography.Display>
         <Callout.Container>
           <Callout icon={<PlanIcon width={32} height={32} />}>
-            <strong>{lorem(4)}</strong>
-            <br />
-            Take our survey to see if you could do with any help
+            <div className="callout-title">{lorem(4)}</div>
+            <div className="callout-paragraph">{lorem(12)}</div>
           </Callout>
         </Callout.Container>
-        <Button.Container>
-          <Button>Primary Button</Button>
-        </Button.Container>
+        <Callout.Container>
+          <Callout icon={<PlanIcon width={32} height={32} />}>
+            <div className="callout-title">{lorem(4)}</div>
+            <div className="callout-paragraph">{lorem(12)}</div>
+          </Callout>
+        </Callout.Container>
+        <Callout.Container>
+          <Callout icon={<PlanIcon width={32} height={32} />}>
+            <div className="callout-title">{lorem(4)}</div>
+            <div className="callout-paragraph">{lorem(12)}</div>
+          </Callout>
+        </Callout.Container>
       </div>
     </div>
     {/*

@@ -103,7 +103,11 @@ const IndexPage = () => (
       <div className="pre-gradient"></div>
       <img src={fourthImage} />
       <div className="white-overlay-text">{lorem(7)}</div>
-      <div className="toast-after"></div>
+      <div className="toast-after">
+        <div className="toast-text-container">
+          <div className="toast-text-title">{lorem(4)}</div>
+        </div>
+      </div>
     </div>
     {/*
     <Link to="/page-2/">Go to page 2</Link> <br /> */}

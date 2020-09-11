@@ -224,6 +224,18 @@ body {
   width: 100vw;
 }
 
+.toast-text-container {
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.toast-text-title {
+  font-family: "Larsseit", sans-serif;
+  color: white;
+  font-size: 1.3rem;
+}
+
 @media only screen and (min-width: 600px) {
   img {
     height: 40rem;

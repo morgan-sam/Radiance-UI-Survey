@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { LinkButton, Button } from "radiance-ui"
-import { PlanIcon } from "radiance-ui/lib/icons"
+import { PlanIcon, GiftIcon, SmileIcon } from "radiance-ui/lib/icons"
 import { Callout, Typography } from "radiance-ui"
 import "../css/index.css"
 import PatternAttacher from "../components/patternAttacher"
@@ -85,13 +85,13 @@ const IndexPage = () => (
           </Callout>
         </Callout.Container>
         <Callout.Container>
-          <Callout icon={<PlanIcon width={32} height={32} />}>
+          <Callout icon={<GiftIcon width={32} height={32} />}>
             <div className="callout-title">{lorem(4)}</div>
             <div className="callout-paragraph">{lorem(12)}</div>
           </Callout>
         </Callout.Container>
         <Callout.Container>
-          <Callout icon={<PlanIcon width={32} height={32} />}>
+          <Callout icon={<SmileIcon width={32} height={32} />}>
             <div className="callout-title">{lorem(4)}</div>
             <div className="callout-paragraph">{lorem(12)}</div>
           </Callout>

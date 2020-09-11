@@ -6,13 +6,15 @@
 .footer-links-horizontal {
   display: flex;
   margin: 2rem 0;
+  width: 100%;
+  justify-content: left;
 }
 
 .footer-link-container {
+  width: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-right: 2rem;
 }
 
 .footer-link-container:first-child {

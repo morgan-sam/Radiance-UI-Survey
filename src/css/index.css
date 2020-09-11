@@ -219,8 +219,8 @@ body {
     hsl(223, 30%, 77%) 3%,
     hsl(223, 30%, 77%) 100%
   );
-  margin-top: -1rem;
-  height: 33rem;
+  margin-top: -1.4rem;
+  height: fit-content;
   width: 100vw;
 }
 

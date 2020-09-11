@@ -108,6 +108,16 @@ const IndexPage = () => (
         <div className="toast-text-container">
           <div className="toast-text-title">{lorem(4)}</div>
           <List items={new Array(4).fill(lorem(6))} />
+          <div className="survey-container">
+            <LinkButton
+              buttonColor={COLORS.statusRed}
+              buttonType="primary"
+              style={{ minWidth: "4rem", userSelect: "none" }}
+            >
+              TAKE SURVEY
+            </LinkButton>
+            <a className="survey-privacy-text">Privacy Policy</a>
+          </div>
         </div>
       </div>
     </div>

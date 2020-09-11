@@ -226,6 +226,8 @@ body {
 
 .toast-text-container {
   display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
   margin: 5rem;
 }
@@ -234,6 +236,7 @@ body {
   font-family: "Larsseit", sans-serif;
   color: white;
   font-size: 1.3rem;
+  margin: 1rem 0;
 }
 
 @media only screen and (min-width: 600px) {

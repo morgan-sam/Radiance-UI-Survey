@@ -8,6 +8,7 @@ import { Callout, Typography } from "radiance-ui"
 import "../css/index.css"
 import PatternAttacher from "../components/patternAttacher"
 import COLORS from "tinycolor2"
+import List from "../components/list"
 import { lorem } from "../js/lorem"
 import blob from "../svg/blob.svg"
 import star from "../svg/star.svg"
@@ -106,6 +107,7 @@ const IndexPage = () => (
       <div className="toast-after">
         <div className="toast-text-container">
           <div className="toast-text-title">{lorem(4)}</div>
+          <List items={new Array(4).fill(lorem(6))} />
         </div>
       </div>
     </div>

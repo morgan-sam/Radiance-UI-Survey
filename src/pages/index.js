@@ -61,7 +61,7 @@ const IndexPage = () => (
         x={"3rem"}
         y={"-3rem"}
         height={"30rem"}
-        color={"hsl(275,50%,70%)"}
+        color={"hsl(47,70%,65%)"}
       />
     </div>
 

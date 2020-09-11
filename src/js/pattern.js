@@ -7,16 +7,15 @@ export const loadImage = async imgURL => {
   })
 }
 
-export const drawPattern = (img, color, params, getContext) => {
-  drawCanvasBackground(color, params, getContext)
+export const drawPattern = (img, params, getContext) => {
+  drawCanvasBackground(params, getContext)
   drawAllShapes(img, params, getContext)
 }
 
-const drawCanvasBackground = (color, params, getContext) => {
-  const { hue, saturation, lightness } = color
+const drawCanvasBackground = (params, getContext) => {
   const { canvas_width, canvas_height } = params
   const ctx = getContext()
-  ctx.fillStyle = `hsl(${hue},${saturation}%,${lightness}%)`
+  ctx.fillStyle = params.color
   ctx.fillRect(0, 0, canvas_width, canvas_height)
 }
 

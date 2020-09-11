@@ -49,6 +49,7 @@ const IndexPage = () => (
         x={"-3rem"}
         y={"-3rem"}
         height={"30rem"}
+        color={"hsl(80,80%,70%)"}
       />
       <div className="explanation-text-box">
         <div className="section-title">{lorem(7)}</div>
@@ -57,9 +58,10 @@ const IndexPage = () => (
       <div className="section-title">{lorem(5)}</div>
       <PatternAttacher
         src={secondImage}
-        x={"-3rem"}
+        x={"3rem"}
         y={"-3rem"}
         height={"30rem"}
+        color={"hsl(275,50%,70%)"}
       />
     </div>
 

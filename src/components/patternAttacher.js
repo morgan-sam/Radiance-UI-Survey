@@ -55,14 +55,10 @@ const PatternAttacher = props => {
           <Pattern
             style={patternStyle}
             img={blob}
-            color={{
-              hue: 80,
-              saturation: 80,
-              lightness: 70,
-            }}
             width={width}
             height={height}
             params={{
+              color: props.color,
               shape_scale: 4.5,
               x_gap: 1.8,
               y_gap: 3,

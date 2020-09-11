@@ -3,7 +3,7 @@ import { loadImage, drawPattern } from "../js/pattern"
 
 const Pattern = props => {
   const patternRef = useRef(null)
-  const { img, color, width, height, style } = props
+  const { img, width, height, style } = props
 
   const getContext = () => patternRef.current.getContext("2d")
 
@@ -15,7 +15,7 @@ const Pattern = props => {
         canvas_height: height,
       }
       const loadedImage = await loadImage(img)
-      drawPattern(loadedImage, color, params, getContext)
+      drawPattern(loadedImage, params, getContext)
     }
 
     if (height !== 0 && width !== 0) loadData()

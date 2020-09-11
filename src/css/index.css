@@ -229,6 +229,10 @@ body {
   margin: 1rem 0;
 }
 
+.section:last-child {
+  margin: 0;
+}
+
 @media only screen and (min-width: 600px) {
   img {
     height: 40rem;

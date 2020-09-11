@@ -39,32 +39,28 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="section">
-      <div className="explanation-box">
-        <div className="explanation-text-box">
-          <div className="section-title">{lorem(7)}</div>
-          <div className="section-paragraph">{lorem(36)}</div>
-        </div>
-        <div className="section-title">{lorem(5)}</div>
-        <PatternAttacher
-          src={firstImage}
-          x={"-3rem"}
-          y={"-3rem"}
-          height={"30rem"}
-        />
+      <div className="explanation-text-box">
+        <div className="section-title">{lorem(7)}</div>
+        <div className="section-paragraph">{lorem(36)}</div>
       </div>
-      <div className="explanation-box">
-        <div className="explanation-text-box">
-          <div className="section-title">{lorem(7)}</div>
-          <div className="section-paragraph">{lorem(36)}</div>
-        </div>
-        <div className="section-title">{lorem(5)}</div>
-        <PatternAttacher
-          src={secondImage}
-          x={"-3rem"}
-          y={"-3rem"}
-          height={"30rem"}
-        />
+      <div className="section-title">{lorem(5)}</div>
+      <PatternAttacher
+        src={firstImage}
+        x={"-3rem"}
+        y={"-3rem"}
+        height={"30rem"}
+      />
+      <div className="explanation-text-box">
+        <div className="section-title">{lorem(7)}</div>
+        <div className="section-paragraph">{lorem(36)}</div>
       </div>
+      <div className="section-title">{lorem(5)}</div>
+      <PatternAttacher
+        src={secondImage}
+        x={"-3rem"}
+        y={"-3rem"}
+        height={"30rem"}
+      />
     </div>
 
     {/* <div className="survey-box">

@@ -42,6 +42,10 @@
 }
 .login-btn-container {
   flex-direction: row;
+  align-items: center;
+}
+.login-btn-container > * {
+  margin: 1rem;
 }
 
 .cross {

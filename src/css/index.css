@@ -22,13 +22,6 @@
   margin: 1rem;
 }
 
-.login-btn-container {
-  display: flex;
-  align-items: center;
-}
-.login-btn-container > * {
-  margin: 1rem;
-}
 .link-text {
   font-family: "Larsseit Light", sans-serif;
   cursor: pointer;

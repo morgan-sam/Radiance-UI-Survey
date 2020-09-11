@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react"
 import Pattern from "../components/pattern"
+import { default_pattern_params } from "../data/default"
 
 const PatternAttacher = props => {
   const { x, y, svg } = props
@@ -47,6 +48,8 @@ const PatternAttacher = props => {
     left: xPos ? "0" : null,
   }
 
+  console.log(default_pattern_params)
+
   return (
     <div style={props.style}>
       <div style={containerStyle}>
@@ -57,15 +60,27 @@ const PatternAttacher = props => {
             width={width}
             height={height}
             params={{
-              color: props.color,
-              shape_scale: 4.5,
-              x_gap: 1.8,
-              y_gap: 3,
-              coverage: 100,
-              random_x_offset: 30,
-              random_y_offset: 60,
-              rotation_lower: -180,
-              rotation_upper: 180,
+              color: props.color ? props.color : default_pattern_params.color,
+              shape_scale: props.shape_scale
+                ? props.shape_scale
+                : default_pattern_params.shape_scale,
+              x_gap: props.x_gap ? props.x_gap : default_pattern_params.x_gap,
+              y_gap: props.y_gap ? props.y_gap : default_pattern_params.y_gap,
+              coverage: props.coverage
+                ? props.coverage
+                : default_pattern_params.coverage,
+              random_x_offset: props.random_x_offset
+                ? props.random_x_offset
+                : default_pattern_params.random_x_offset,
+              random_y_offset: props.random_y_offset
+                ? props.random_y_offset
+                : default_pattern_params.random_y_offset,
+              rotation_lower: props.rotation_lower
+                ? props.rotation_lower
+                : default_pattern_params.rotation_lower,
+              rotation_upper: props.rotation_upper
+                ? props.rotation_upper
+                : default_pattern_params.rotation_upper,
             }}
           />
         )}

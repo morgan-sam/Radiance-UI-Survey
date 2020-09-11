@@ -7,9 +7,10 @@ import { PlanIcon } from "radiance-ui/lib/icons"
 import { Callout, Typography } from "radiance-ui"
 import "../css/index.css"
 import PatternAttacher from "../components/patternAttacher"
-import blob from "../svg/blob.svg"
 import COLORS from "tinycolor2"
 import { lorem } from "../js/lorem"
+import blob from "../svg/blob.svg"
+import star from "../svg/star.svg"
 
 const firstImage =
   "https://images.unsplash.com/photo-1570554520913-ce2192a74574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
@@ -46,6 +47,7 @@ const IndexPage = () => (
       <div className="section-title">{lorem(5)}</div>
       <PatternAttacher
         src={firstImage}
+        svg={blob}
         x={"-3rem"}
         y={"-3rem"}
         height={"30rem"}
@@ -58,6 +60,7 @@ const IndexPage = () => (
       <div className="section-title">{lorem(5)}</div>
       <PatternAttacher
         src={secondImage}
+        svg={star}
         x={"3rem"}
         y={"-3rem"}
         height={"30rem"}

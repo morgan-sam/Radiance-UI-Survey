@@ -1,9 +1,8 @@
 import React, { useEffect, useState, useRef } from "react"
 import Pattern from "../components/pattern"
-import blob from "../svg/blob.svg"
 
 const PatternAttacher = props => {
-  const { x, y } = props
+  const { x, y, svg } = props
   const imgHeight = props.height
   const imgWidth = props.width
 
@@ -54,7 +53,7 @@ const PatternAttacher = props => {
         {loadPattern && (
           <Pattern
             style={patternStyle}
-            img={blob}
+            img={svg}
             width={width}
             height={height}
             params={{

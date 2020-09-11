@@ -71,7 +71,7 @@ const IndexPage = () => (
         color={"hsl(47,70%,65%)"}
       />
     </div>
-    <div className="section">
+    <div className="section pocket-guy">
       <div className="fill-section"></div>
       <div className="white-overlay-text">{lorem(7)}</div>
       <img src={thirdImage} className="fill-image" />
@@ -99,7 +99,7 @@ const IndexPage = () => (
         </Callout.Container>
       </div>
     </div>
-    <div className="section">
+    <div className="section toast">
       <div className="toast-gradient"></div>
       <img src={fourthImage} className="fill-image" />
       <div className="white-overlay-text">{lorem(7)}</div>

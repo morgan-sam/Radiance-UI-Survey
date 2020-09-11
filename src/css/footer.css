@@ -8,6 +8,26 @@
   width: 100%;
 }
 
+.social-media-container {
+  color: #706d87;
+}
+
+.social-media-container > * {
+  margin: 1rem 0;
+}
+
+.icon-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+.icon-container > * {
+  width: 2rem;
+  height: 2rem;
+}
+
 .footer-link-container {
   width: 50%;
   display: flex;

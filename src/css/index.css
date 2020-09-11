@@ -103,6 +103,15 @@ body {
   font-size: 2rem;
 }
 
+.splash-sub-text {
+  font-family: "Larsseit Light", sans-serif;
+  font-size: 1rem;
+}
+
+.splash-text-container > * {
+  margin: 1.5rem 0;
+}
+
 /* Section 2: Testimonies */
 
 .testimony-container {
@@ -123,15 +132,6 @@ body {
   margin: 1.8rem;
   color: #706c87;
   line-height: 1.5rem;
-}
-
-.splash-sub-text {
-  font-family: "Larsseit Light", sans-serif;
-  font-size: 1rem;
-}
-
-.splash-text-container > * {
-  margin: 1.5rem 0;
 }
 
 .pre-gradient {

@@ -42,6 +42,7 @@ const IndexPage = () => (
           <div className="section-title">{lorem(7)}</div>
           <div className="section-paragraph">{lorem(36)}</div>
         </div>
+        <div className="section-title">{lorem(5)}</div>
         <PatternAttacher
           src={imgURL}
           x={"-3rem"}

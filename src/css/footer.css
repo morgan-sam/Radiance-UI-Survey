@@ -59,6 +59,9 @@
 .footer-section:first-child {
   border-top: none;
 }
+.footer-section:last-child {
+  padding: 1rem 0;
+}
 
 .footer-privacy-container {
   display: flex;

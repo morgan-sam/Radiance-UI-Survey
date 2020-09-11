@@ -44,12 +44,12 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <div className="section">
-      <div className="explanation-text-box">
-        <div className="section-title">{lorem(7)}</div>
-        <div className="section-paragraph">{lorem(36)}</div>
+    <div className="section testimonies">
+      <div className="testimony-container">
+        <div className="testimony-title">{lorem(7)}</div>
+        <div className="testimony-paragraph">{lorem(36)}</div>
       </div>
-      <div className="section-title">{lorem(5)}</div>
+      <div className="testimony-title">{lorem(5)}</div>
       <PatternAttacher
         src={firstImage}
         svg={blob}
@@ -58,11 +58,11 @@ const IndexPage = () => (
         height={"30rem"}
         color={"hsl(80,80%,70%)"}
       />
-      <div className="explanation-text-box">
-        <div className="section-title">{lorem(7)}</div>
-        <div className="section-paragraph">{lorem(36)}</div>
+      <div className="testimony-container">
+        <div className="testimony-title">{lorem(7)}</div>
+        <div className="testimony-paragraph">{lorem(36)}</div>
       </div>
-      <div className="section-title">{lorem(5)}</div>
+      <div className="testimony-title">{lorem(5)}</div>
       <PatternAttacher
         src={secondImage}
         svg={star}

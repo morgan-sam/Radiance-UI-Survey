@@ -8,6 +8,7 @@ import {
   Field,
 } from "radiance-ui"
 import QuestionOne from "./questions/question1"
+import QuestionTwo from "./questions/question2"
 import { ThumbsUpIcon, MinusIcon, ThumbsDownIcon } from "radiance-ui/lib/icons"
 import { lorem } from "../js/lorem"
 import { css } from "@emotion/core"
@@ -16,16 +17,6 @@ import "../css/survey.css"
 const modalHeaderImage =
   "https://images.unsplash.com/photo-1556228852-80b6e5eeff06?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
 
-const makeupItems = [
-  "Primer",
-  "Foundation",
-  "BB Cream",
-  "Concealer",
-  "Blush",
-  "Highlighter",
-  "Bronzer",
-  "Setting Spray",
-]
 const nonAcneIssues = ["Wrinkles", "Poor Texture", "Dark Circles", "Firmness"]
 
 const Survey = props => {
@@ -57,29 +48,7 @@ const Survey = props => {
         Thank you for taking our survey. It will take approximately 2-3 minutes.
       </p>
       <QuestionOne {...{ data, setData }} />
-      <h3>Question 2:</h3>
-      <p>Please select the makeup items you use in your daily routine:</p>
-      <div className="multiple-choice-container">
-        {makeupItems.map(option => (
-          <div className="multiple-choice">
-            <span key={`label_${option}`} className="multiple-choice-label">
-              {option}
-            </span>
-            <Checkbox
-              key={`checkbox_${option}`}
-              type="primary"
-              style={{ marginBottom: "0" }}
-              checked={data.makeup.includes(option)}
-              onClick={() => {
-                if (data.makeup.includes(option)) {
-                  const filteredList = data.makeup.filter(el => el !== option)
-                  setData({ ...data, makeup: filteredList })
-                } else setData({ ...data, makeup: [...data.makeup, option] })
-              }}
-            />
-          </div>
-        ))}
-      </div>
+      <QuestionTwo {...{ data, setData }} />
       <h3>Question 3{data.previous ? "A" : null}:</h3>
       <p>Have you previously had any skincare treatment?</p>
       <RadioButton

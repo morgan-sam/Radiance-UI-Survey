@@ -1,10 +1,14 @@
 @media only screen and (min-width: 1200px) {
   /* Section 1: Splash */
 
+  .section.splash {
+    height: 42rem;
+  }
+
   .splash-text-container {
     width: 21.8rem;
     left: 65vw;
-    top: 20%;
+    top: 18vh;
   }
 
   /* Section 2: Testimonies */

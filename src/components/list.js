@@ -6,8 +6,8 @@ const List = props => {
   const { items } = props
   return (
     <ul className="list">
-      {items.map(el => (
-        <li className="list-item">
+      {items.map((el, i) => (
+        <li key={i} className="list-item">
           <img src={tick} className="list-tick" />
           {el}
         </li>

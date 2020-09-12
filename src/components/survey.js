@@ -24,11 +24,13 @@ const makeupItems = [
   "Bronzer",
   "Setting Spray",
 ]
+const acneSymptoms = ["Zits", "Clogged Pores", "Dark Spots", "Redness"]
 
 const Survey = props => {
   const [data, setData] = useState({
     acne: undefined,
     length: undefined,
+    symptoms: [],
     makeup: [],
     previous: undefined,
     previousResult: undefined,
@@ -126,6 +128,32 @@ const Survey = props => {
         >
           2+ years
         </RadioButton>,
+        <p>Question 1C:</p>,
+        <p>Please select the symptoms you have:</p>,
+        <div className="makeup-option-container">
+          {acneSymptoms.map(option => (
+            <div className="makeup-option">
+              <span key={`label_${option}`} className="makeup-item-label">
+                {option}
+              </span>
+              <Checkbox
+                key={`checkbox_${option}`}
+                type="primary"
+                style={{ marginBottom: "0" }}
+                checked={data.symptoms.includes(option)}
+                onClick={() => {
+                  if (data.symptoms.includes(option)) {
+                    const filteredList = data.symptoms.filter(
+                      el => el !== option
+                    )
+                    setData({ ...data, symptoms: filteredList })
+                  } else
+                    setData({ ...data, symptoms: [...data.symptoms, option] })
+                }}
+              />
+            </div>
+          ))}
+        </div>,
       ]}
       <p>Question 2:</p>
       <p>Please select the makeup items you use in your daily routine:</p>
@@ -208,7 +236,7 @@ const Survey = props => {
         />,
       ]}
       <p>Question 4:</p>
-      <p>{lorem(10)}?</p>
+      <p>Do you have any non acne skin issues?</p>
       <p>Question 5:</p>
       <p>{lorem(10)}?</p>
     </ImmersiveModal>

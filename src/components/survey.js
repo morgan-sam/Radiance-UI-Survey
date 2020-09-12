@@ -5,7 +5,6 @@ import QuestionTwo from "./questions/question2"
 import QuestionThree from "./questions/question3"
 import QuestionFour from "./questions/question4"
 import QuestionFive from "./questions/question5"
-import { lorem } from "../js/lorem"
 import "../css/survey.css"
 
 const modalHeaderImage =

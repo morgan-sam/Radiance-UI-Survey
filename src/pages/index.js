@@ -97,8 +97,8 @@ const IndexPage = () => {
         <img src={thirdImage} className="fill-image" alt="" />
       </div>
       <div className="section callouts">
+        <Typography.Display>{lorem(2)}</Typography.Display>
         <div className="callout-container">
-          <Typography.Display>{lorem(2)}</Typography.Display>
           <Callout.Container>
             <Callout icon={<PlanIcon width={32} height={32} />}>
               <div className="callout-title">{lorem(4)}</div>

@@ -29,4 +29,26 @@
     position: absolute;
     left: 0;
   }
+
+  /* Section 4: Callouts */
+
+  .callout-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .callout-container > *:nth-child(odd) {
+    padding-right: 7rem;
+  }
+  .callout-container > *:nth-child(even) {
+    padding-left: 7rem;
+  }
+  .section.callouts {
+    margin: 5rem 0 7rem 0;
+  }
+  .callout-title {
+    font-size: calc(0.8rem + 1vw);
+  }
+  .callout-paragraph {
+    font-size: calc(0.5rem + 1vw);
+  }
 }

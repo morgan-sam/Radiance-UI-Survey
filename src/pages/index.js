@@ -8,6 +8,7 @@ import { PlanIcon, GiftIcon, SmileIcon } from "radiance-ui/lib/icons"
 import COLORS from "tinycolor2"
 
 import "../css/index.css"
+import "../css/index-tablet.css"
 
 import PatternAttacher from "../components/patternAttacher"
 import List from "../components/list"

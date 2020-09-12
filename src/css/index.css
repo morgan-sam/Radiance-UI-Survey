@@ -238,14 +238,3 @@ body {
 .section:last-child {
   margin: 0;
 }
-
-@media only screen and (min-width: 600px) {
-  img {
-    height: 40rem;
-    user-select: none;
-  }
-
-  .splash-image {
-    background-position: left 60%;
-  }
-}

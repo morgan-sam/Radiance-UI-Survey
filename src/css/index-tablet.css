@@ -1,0 +1,14 @@
+@media only screen and (min-width: 600px) {
+  /* img {
+    height: 40rem;
+    user-select: none;
+  } */
+
+  .splash-image {
+    background-position: calc(-40rem + 30vw) 60%;
+  }
+  .splash-text-container {
+    left: 70vw;
+    top: 25%;
+  }
+}

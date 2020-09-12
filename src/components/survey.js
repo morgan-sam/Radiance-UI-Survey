@@ -1,23 +1,15 @@
 import React, { useState } from "react"
-import {
-  ImmersiveModal,
-  Button,
-  OptionButton,
-  RadioButton,
-  Checkbox,
-  Field,
-} from "radiance-ui"
+import { ImmersiveModal, Button, RadioButton, Field } from "radiance-ui"
 import QuestionOne from "./questions/question1"
 import QuestionTwo from "./questions/question2"
 import QuestionThree from "./questions/question3"
+import QuestionFour from "./questions/question4"
 import { lorem } from "../js/lorem"
 import { css } from "@emotion/core"
 import "../css/survey.css"
 
 const modalHeaderImage =
   "https://images.unsplash.com/photo-1556228852-80b6e5eeff06?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
-
-const nonAcneIssues = ["Wrinkles", "Poor Texture", "Dark Circles", "Firmness"]
 
 const Survey = props => {
   const [data, setData] = useState({
@@ -50,63 +42,7 @@ const Survey = props => {
       <QuestionOne {...{ data, setData }} />
       <QuestionTwo {...{ data, setData }} />
       <QuestionThree {...{ data, setData }} />
-      <h3>Question 4{data.nonAcne ? "A" : null}:</h3>
-      <p>Do you have any non acne skin issues?</p>
-      <RadioButton
-        type="primary"
-        checked={data.nonAcne === true}
-        css={css`
-          & > p:last-of-type {
-            margin-bottom: 0;
-          }
-        `}
-        onClick={() => setData({ ...data, nonAcne: true })}
-      >
-        Yes
-      </RadioButton>
-      <RadioButton
-        type="primary"
-        checked={data.nonAcne === false}
-        css={css`
-          & > p:last-of-type {
-            margin-bottom: 0;
-          }
-        `}
-        onClick={() => setData({ ...data, nonAcne: false })}
-      >
-        No
-      </RadioButton>
-      {data.nonAcne && [
-        <h3>Question 4B:</h3>,
-        <p>Please select all that apply:</p>,
-        <div className="multiple-choice-container">
-          {nonAcneIssues.map(option => (
-            <div className="multiple-choice">
-              <span key={`label_${option}`} className="multiple-choice-label">
-                {option}
-              </span>
-              <Checkbox
-                key={`checkbox_${option}`}
-                type="primary"
-                style={{ marginBottom: "0" }}
-                checked={data.nonAcneIssues.includes(option)}
-                onClick={() => {
-                  if (data.nonAcneIssues.includes(option)) {
-                    const filteredList = data.nonAcneIssues.filter(
-                      el => el !== option
-                    )
-                    setData({ ...data, nonAcneIssues: filteredList })
-                  } else
-                    setData({
-                      ...data,
-                      nonAcneIssues: [...data.nonAcneIssues, option],
-                    })
-                }}
-              />
-            </div>
-          ))}
-        </div>,
-      ]}
+      <QuestionFour {...{ data, setData }} />
       <h3>Question 5:</h3>
       <p>Are you currently seeking skincare treatment?</p>
       <RadioButton

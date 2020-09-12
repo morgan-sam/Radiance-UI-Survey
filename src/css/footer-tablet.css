@@ -1,0 +1,25 @@
+@media only screen and (min-width: 600px) {
+  .footer-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 3rem;
+  }
+  .footer {
+    padding: 5rem 3rem 3rem 3rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer-link-container {
+    width: 10rem;
+  }
+  .footer-section:nth-child(2) {
+    border-top: none;
+  }
+  .footer-section {
+    width: 40vw;
+  }
+}

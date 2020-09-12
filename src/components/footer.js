@@ -9,6 +9,7 @@ import youtube from "../svg/social_media/youtube.svg"
 import pinterest from "../svg/social_media/pinterest.svg"
 
 import "../css/footer.css"
+import "../css/footer-tablet.css"
 
 const Footer = ({ siteTitle }) => {
   return (

@@ -37,6 +37,7 @@ const Survey = props => {
     previousResult: undefined,
     nonAcne: undefined,
     nonAcneIssues: [],
+    seeking: undefined,
   })
   const { surveyOpen, setSurveyOpen } = props
 
@@ -296,7 +297,31 @@ const Survey = props => {
         </div>,
       ]}
       <p>Question 5:</p>
-      <p>{lorem(10)}?</p>
+      <p>Are you currently seeking skincare treatment?</p>
+      <RadioButton
+        type="primary"
+        checked={data.seeking === true}
+        css={css`
+          & > p:last-of-type {
+            margin-bottom: 0;
+          }
+        `}
+        onClick={() => setData({ ...data, seeking: true })}
+      >
+        Yes
+      </RadioButton>
+      <RadioButton
+        type="primary"
+        checked={data.seeking === false}
+        css={css`
+          & > p:last-of-type {
+            margin-bottom: 0;
+          }
+        `}
+        onClick={() => setData({ ...data, seeking: false })}
+      >
+        No
+      </RadioButton>
     </ImmersiveModal>
   )
 }

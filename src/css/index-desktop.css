@@ -35,4 +35,30 @@
   .pocket-guy > img {
     width: 50vw;
   }
+
+  /* Section 4: Callouts */
+
+  .callout-container {
+    flex-direction: row;
+  }
+  .callout-container > *:nth-child(even) {
+    padding-left: 0;
+  }
+  .callout-container > *:nth-child(odd) {
+    padding-right: 0;
+  }
+  .callout-container > * {
+    margin: 4rem;
+  }
+  .callout-container > * > * {
+    padding: 2rem;
+  }
+
+  .callout-title {
+    margin: 1rem;
+  }
+  .callout-paragraph {
+    margin: 1rem;
+    font-size: 1.6rem;
+  }
 }

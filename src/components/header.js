@@ -1,6 +1,7 @@
 import COLORS from "tinycolor2"
 import { LinkButton, Button } from "radiance-ui"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 import React, { useState } from "react"
 
 import "../css/header.css"
@@ -31,10 +32,18 @@ const Header = ({ siteTitle }) => {
           />
         </div>
         <div className="link-container">
-          <a className="link-text">Why Curology</a>
-          <a className="link-text">Reviews</a>
-          <a className="link-text">Community</a>
-          <a className="link-text">Survey</a>
+          <a className="link-text" href="https://curology.com/why-curology">
+            Why Curology
+          </a>
+          <a className="link-text" href="https://curology.com/skincare/reviews">
+            Reviews
+          </a>
+          <a className="link-text" href="https://curology.com/community">
+            Community
+          </a>
+          <Link className="link-text" to="/">
+            Survey
+          </Link>
         </div>
         <div className="login-btn-container">
           <Button.Container>

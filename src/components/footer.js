@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import instagram from "../svg/social_media/instagram.svg"
 import facebook from "../svg/social_media/facebook.svg"
@@ -16,18 +17,41 @@ const Footer = ({ siteTitle }) => {
         <h1 className="footer-logo">{siteTitle}</h1>
         <div className="footer-links-horizontal">
           <div className="footer-link-container">
-            <a className="footer-link">Why Curology</a>
-            <a className="footer-link">Community</a>
-            <a className="footer-link">Out Story</a>
-            <a className="footer-link">Guides</a>
-            <a className="footer-link">Survey</a>
+            <a className="footer-link" href="https://curology.com/why-curology">
+              Why Curology
+            </a>
+            <a className="footer-link" href="https://curology.com/community">
+              Community
+            </a>
+            <a className="footer-link" href="https://curology.com/our-story">
+              Out Story
+            </a>
+            <a className="footer-link" href="https://curology.com/guides">
+              Guides
+            </a>
+            <Link className="footer-link" to="/">
+              Survey
+            </Link>
           </div>
           <div className="footer-link-container">
-            <a className="footer-link">Blog</a>
-            <a className="footer-link">Support</a>
-            <a className="footer-link">Reviews</a>
-            <a className="footer-link">Careers</a>
-            <a className="footer-link">Contact Us</a>
+            <a className="footer-link" href="https://blog.curology.com/">
+              Blog
+            </a>
+            <a className="footer-link" href="https://support.curology.com/">
+              Support
+            </a>
+            <a
+              className="footer-link"
+              href="https://curology.com/skincare/reviews"
+            >
+              Reviews
+            </a>
+            <a className="footer-link" href="https://curology.com/careers">
+              Careers
+            </a>
+            <a className="footer-link" href="https://curology.com/contact-us">
+              Contact Us
+            </a>
           </div>
         </div>
       </div>
@@ -35,14 +59,38 @@ const Footer = ({ siteTitle }) => {
         <div className="social-media-container">
           <div>Follow @curology</div>
           <div className="icon-container">
-            <img src={instagram} alt="Instagram Logo" />
-            <img src={facebook} alt="Facebook Logo" />
-            <img src={snapchat} alt="Snapchat Logo" />
-            <img src={twitter} alt="Twitter Logo" />
-            <img src={youtube} alt="Youtube Logo" />
-            <img src={pinterest} alt="Pinterest Logo" />
+            <img
+              src={instagram}
+              alt="Instagram Logo"
+              href="https://www.instagram.com/curology/"
+            />
+            <img
+              src={facebook}
+              alt="Facebook Logo"
+              href="https://www.facebook.com/Curology/"
+            />
+            <img
+              src={snapchat}
+              alt="Snapchat Logo"
+              href="https://www.snapchat.com/add/curology"
+            />
+            <img
+              src={twitter}
+              alt="Twitter Logo"
+              href="https://twitter.com/CurologyUSA"
+            />
+            <img
+              src={youtube}
+              alt="Youtube Logo"
+              href="https://www.youtube.com/Curology"
+            />
+            <img
+              src={pinterest}
+              alt="Pinterest Logo"
+              href="https://www.pinterest.com/curology/"
+            />
           </div>
-          <a>Need financial assistance?</a>
+          {/* <a>Need financial assistance?</a> */}
         </div>
       </div>
       <div className="footer-section">
@@ -50,9 +98,21 @@ const Footer = ({ siteTitle }) => {
           <div className="survey-privacy-text">
             © {new Date().getFullYear()} {siteTitle}
           </div>
-          <a className="survey-privacy-text">Terms of Service</a>
-          <a className="survey-privacy-text">Privacy</a>
-          <a className="survey-privacy-text">Do not sell my information</a>
+          <a className="survey-privacy-text" href="https://curology.com/terms/">
+            Terms of Service
+          </a>
+          <a
+            className="survey-privacy-text"
+            href="https://curology.com/privacy/"
+          >
+            Privacy
+          </a>
+          <a
+            className="survey-privacy-text"
+            href="https://curology.com/donotsell"
+          >
+            Do not sell my information
+          </a>
         </div>
       </div>
     </div>

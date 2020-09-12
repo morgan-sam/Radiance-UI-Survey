@@ -50,7 +50,12 @@ const IndexPage = () => {
             >
               TAKE SURVEY
             </Button>
-            <a className="survey-privacy-text">Privacy Policy</a>
+            <a
+              className="survey-privacy-text"
+              href="https://curology.com/privacy/"
+            >
+              Privacy Policy
+            </a>
           </div>
         </div>
       </div>
@@ -127,7 +132,12 @@ const IndexPage = () => {
               >
                 TAKE SURVEY
               </Button>
-              <a className="survey-privacy-text">Privacy Policy</a>
+              <a
+                className="survey-privacy-text"
+                href="https://curology.com/privacy/"
+              >
+                Privacy Policy
+              </a>
             </div>
           </div>
         </div>

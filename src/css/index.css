@@ -144,8 +144,9 @@ body {
 .white-overlay-text {
   position: absolute;
   left: 50%;
+  text-align: center;
   transform: translateX(-50%);
-  width: 80vw;
+  width: fit-content;
   z-index: 20;
   font-family: "Playfair Display", serif;
   color: white;

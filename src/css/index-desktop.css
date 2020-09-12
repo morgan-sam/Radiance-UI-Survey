@@ -11,6 +11,10 @@
     top: 18vh;
   }
 
+  .splash-text-container > .survey-container {
+    margin: 2rem 0 0 1.3rem;
+  }
+
   /* Section 2: Testimonies */
 
   .testimony-container {

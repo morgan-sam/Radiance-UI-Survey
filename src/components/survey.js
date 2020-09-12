@@ -127,14 +127,22 @@ const Survey = props => {
       <p>Question 2:</p>
       <p>Please select the makeup items you use in your daily routine:</p>
       <div className="makeup-option-container">
-        {makeupItems.map(el => (
+        {makeupItems.map(option => (
           <div className="makeup-option">
-            <span className="makeup-item-label">{el}</span>
+            <span key={`label_${option}`} className="makeup-item-label">
+              {option}
+            </span>
             <Checkbox
+              key={`checkbox_${option}`}
               type="primary"
               style={{ marginBottom: "0" }}
-              checked
-              onChange={() => {}}
+              checked={data.makeup.includes(option)}
+              onClick={() => {
+                if (data.makeup.includes(option)) {
+                  const filteredList = data.makeup.filter(el => el !== option)
+                  setData({ ...data, makeup: filteredList })
+                } else setData({ ...data, makeup: [...data.makeup, option] })
+              }}
             />
           </div>
         ))}

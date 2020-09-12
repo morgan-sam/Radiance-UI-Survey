@@ -48,8 +48,6 @@ const PatternAttacher = props => {
     left: xPos ? "0" : null,
   }
 
-  console.log(default_pattern_params)
-
   return (
     <div style={props.style}>
       <div style={containerStyle}>

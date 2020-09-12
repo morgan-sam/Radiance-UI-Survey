@@ -9,13 +9,9 @@
 
 .makeup-option {
   display: flex;
-  margin: 0 0.5rem;
+  margin: 0.25rem 0.5rem;
 }
 
 .makeup-item-label {
   margin: 1rem;
-}
-
-.makeup-checkbox {
-  margin-bottom: 0;
 }

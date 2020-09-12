@@ -130,7 +130,12 @@ const Survey = props => {
         {makeupItems.map(el => (
           <div className="makeup-option">
             <span className="makeup-item-label">{el}</span>
-            <Checkbox type="primary" className="makeup-checkbox" checked />
+            <Checkbox
+              type="primary"
+              style={{ marginBottom: "0" }}
+              checked
+              onChange={() => {}}
+            />
           </div>
         ))}
       </div>

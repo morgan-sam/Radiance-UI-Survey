@@ -1,11 +1,11 @@
 import React, { useState } from "react"
-import { ImmersiveModal, Button, RadioButton, Field } from "radiance-ui"
+import { ImmersiveModal, Button, Field } from "radiance-ui"
 import QuestionOne from "./questions/question1"
 import QuestionTwo from "./questions/question2"
 import QuestionThree from "./questions/question3"
 import QuestionFour from "./questions/question4"
+import QuestionFive from "./questions/question5"
 import { lorem } from "../js/lorem"
-import { css } from "@emotion/core"
 import "../css/survey.css"
 
 const modalHeaderImage =
@@ -43,32 +43,7 @@ const Survey = props => {
       <QuestionTwo {...{ data, setData }} />
       <QuestionThree {...{ data, setData }} />
       <QuestionFour {...{ data, setData }} />
-      <h3>Question 5:</h3>
-      <p>Are you currently seeking skincare treatment?</p>
-      <RadioButton
-        type="primary"
-        checked={data.seeking === true}
-        css={css`
-          & > p:last-of-type {
-            margin-bottom: 0;
-          }
-        `}
-        onClick={() => setData({ ...data, seeking: true })}
-      >
-        Yes
-      </RadioButton>
-      <RadioButton
-        type="primary"
-        checked={data.seeking === false}
-        css={css`
-          & > p:last-of-type {
-            margin-bottom: 0;
-          }
-        `}
-        onClick={() => setData({ ...data, seeking: false })}
-      >
-        No
-      </RadioButton>
+      <QuestionFive {...{ data, setData }} />
       <p>Please enter a valid email address:</p>
       <Field labelFor="input-hint">
         <Field.Input

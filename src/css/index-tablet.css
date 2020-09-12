@@ -1,14 +1,32 @@
 @media only screen and (min-width: 600px) {
-  /* img {
-    height: 40rem;
-    user-select: none;
-  } */
-
+  /* Section 1: Splash */
   .splash-image {
     background-position: calc(-40rem + 30vw) 60%;
   }
   .splash-text-container {
     left: 70vw;
     top: 25%;
+  }
+
+  /* Section 3: Pocket Guy */
+
+  .section.pocket-guy {
+    position: relative;
+    background: rgb(167, 151, 196);
+    height: 30rem;
+  }
+  .section.pocket-guy > .pre-gradient {
+    display: none;
+  }
+  .pocket-guy > .white-overlay-text {
+    position: relative;
+    transform: translateY(-50%);
+    width: 20rem;
+    left: calc(10.5rem + 4vw);
+  }
+  .pocket-guy > img {
+    width: 25rem;
+    position: absolute;
+    left: 0;
   }
 }

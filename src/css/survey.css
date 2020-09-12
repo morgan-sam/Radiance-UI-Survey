@@ -14,3 +14,11 @@
 .multiple-choice-label {
   margin: 1rem;
 }
+
+.question {
+  margin: 6rem 0;
+}
+
+.sub-question {
+  margin: 4rem 0;
+}

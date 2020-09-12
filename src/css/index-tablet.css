@@ -4,8 +4,15 @@
     background-position: calc(-40rem + 30vw) 60%;
   }
   .splash-text-container {
-    left: 70vw;
-    top: 25%;
+    left: 66vw;
+    top: 20%;
+    width: 20vw;
+  }
+  .splash-main-text {
+    font-size: calc(1.5rem + 1vw);
+  }
+  .splash-sub-text {
+    font-size: calc(1rem + 1vw);
   }
 
   /* Section 3: Pocket Guy */

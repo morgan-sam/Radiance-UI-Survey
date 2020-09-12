@@ -14,6 +14,7 @@ import "../css/survey.css"
 const modalHeaderImage =
   "https://images.unsplash.com/photo-1556228852-80b6e5eeff06?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
 
+const acneSymptoms = ["Zits", "Clogged Pores", "Dark Spots", "Redness"]
 const makeupItems = [
   "Primer",
   "Foundation",
@@ -24,7 +25,7 @@ const makeupItems = [
   "Bronzer",
   "Setting Spray",
 ]
-const acneSymptoms = ["Zits", "Clogged Pores", "Dark Spots", "Redness"]
+const nonAcneIssues = ["Wrinkles", "Poor Texture", "Dark Circles", "Firmness"]
 
 const Survey = props => {
   const [data, setData] = useState({
@@ -35,6 +36,7 @@ const Survey = props => {
     previous: undefined,
     previousResult: undefined,
     nonAcne: undefined,
+    nonAcneIssues: [],
   })
   const { surveyOpen, setSurveyOpen } = props
 
@@ -236,7 +238,7 @@ const Survey = props => {
           icon={<ThumbsDownIcon />}
         />,
       ]}
-      <p>Question 4:</p>
+      <p>Question 4{data.nonAcne ? "A" : null}:</p>
       <p>Do you have any non acne skin issues?</p>
       <RadioButton
         type="primary"
@@ -262,6 +264,37 @@ const Survey = props => {
       >
         No
       </RadioButton>
+      {data.nonAcne && [
+        <p>Question 4B:</p>,
+        <p>Please select all that apply:</p>,
+        <div className="makeup-option-container">
+          {nonAcneIssues.map(option => (
+            <div className="makeup-option">
+              <span key={`label_${option}`} className="makeup-item-label">
+                {option}
+              </span>
+              <Checkbox
+                key={`checkbox_${option}`}
+                type="primary"
+                style={{ marginBottom: "0" }}
+                checked={data.nonAcneIssues.includes(option)}
+                onClick={() => {
+                  if (data.nonAcneIssues.includes(option)) {
+                    const filteredList = data.nonAcneIssues.filter(
+                      el => el !== option
+                    )
+                    setData({ ...data, nonAcneIssues: filteredList })
+                  } else
+                    setData({
+                      ...data,
+                      nonAcneIssues: [...data.nonAcneIssues, option],
+                    })
+                }}
+              />
+            </div>
+          ))}
+        </div>,
+      ]}
       <p>Question 5:</p>
       <p>{lorem(10)}?</p>
     </ImmersiveModal>

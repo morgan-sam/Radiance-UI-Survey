@@ -5,6 +5,7 @@ import {
   OptionButton,
   RadioButton,
   Checkbox,
+  Field,
 } from "radiance-ui"
 import { ThumbsUpIcon, MinusIcon, ThumbsDownIcon } from "radiance-ui/lib/icons"
 import { lorem } from "../js/lorem"
@@ -322,6 +323,18 @@ const Survey = props => {
       >
         No
       </RadioButton>
+      <p>Please enter a valid email address:</p>
+      <Field labelFor="input-hint">
+        <Field.Input
+          id="input-hint"
+          type="text"
+          placeholder="Email Address"
+          style={{
+            padding: "1rem 0",
+            textIndent: "1rem",
+          }}
+        />
+      </Field>
     </ImmersiveModal>
   )
 }

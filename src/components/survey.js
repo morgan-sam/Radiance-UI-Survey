@@ -1,5 +1,11 @@
 import React, { useState } from "react"
-import { ImmersiveModal, Button, Dropdown, RadioButton } from "radiance-ui"
+import {
+  ImmersiveModal,
+  Button,
+  Dropdown,
+  RadioButton,
+  Checkbox,
+} from "radiance-ui"
 import { lorem } from "../js/lorem"
 import { css } from "@emotion/core"
 import "../css/survey.css"
@@ -7,10 +13,22 @@ import "../css/survey.css"
 const modalHeaderImage =
   "https://images.unsplash.com/photo-1556228852-80b6e5eeff06?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
 
+const makeupItems = [
+  "Primer",
+  "Foundation",
+  "BB Cream",
+  "Concealer",
+  "Blush",
+  "Highlighter",
+  "Bronzer",
+  "Setting Spray",
+]
+
 const Survey = props => {
   const [data, setData] = useState({
     acne: undefined,
     length: undefined,
+    makeup: [],
   })
   const { surveyOpen, setSurveyOpen } = props
 
@@ -106,17 +124,21 @@ const Survey = props => {
           2+ years
         </RadioButton>,
       ]}
+      <p>Question 2:</p>
+      <p>Please select the makeup items you use in your daily routine:</p>
+      <div className="makeup-option-container">
+        {makeupItems.map(el => (
+          <div className="makeup-option">
+            <span className="makeup-item-label">{el}</span>
+            <Checkbox type="primary" className="makeup-checkbox" checked />
+          </div>
+        ))}
+      </div>
       <p>Question 3:</p>
       <p>{lorem(10)}?</p>
       <p>Question 4:</p>
       <p>{lorem(10)}?</p>
       <p>Question 5:</p>
-      <p>{lorem(10)}?</p>
-      <p>Question 6:</p>
-      <p>{lorem(10)}?</p>
-      <p>Question 7:</p>
-      <p>{lorem(10)}?</p>
-      <p>Question 8:</p>
       <p>{lorem(10)}?</p>
     </ImmersiveModal>
   )

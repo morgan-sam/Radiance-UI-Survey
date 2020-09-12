@@ -1,1 +1,21 @@
 /* #524D6E */
+
+.makeup-option-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.makeup-option {
+  display: flex;
+  margin: 0 0.5rem;
+}
+
+.makeup-item-label {
+  margin: 1rem;
+}
+
+.makeup-checkbox {
+  margin-bottom: 0;
+}

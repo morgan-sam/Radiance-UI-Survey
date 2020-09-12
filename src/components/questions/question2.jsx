@@ -25,7 +25,6 @@ const QuestionTwo = props => {
               {option}
             </span>
             <Checkbox
-              key={`checkbox_${option}`}
               type="primary"
               style={{ marginBottom: "0" }}
               checked={data.makeup.includes(option)}

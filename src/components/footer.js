@@ -10,6 +10,7 @@ import pinterest from "../svg/social_media/pinterest.svg"
 
 import "../css/footer.css"
 import "../css/footer-tablet.css"
+import "../css/footer-desktop.css"
 
 const Footer = ({ siteTitle }) => {
   return (

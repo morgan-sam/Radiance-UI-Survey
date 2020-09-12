@@ -1,0 +1,15 @@
+@media only screen and (min-width: 1200px) {
+  .footer {
+    padding: 6rem 20rem;
+  }
+  .footer-logo {
+    margin: 6rem 20rem;
+  }
+  .footer-section {
+    width: fit-content;
+    margin-right: 20rem;
+  }
+  .footer-section:nth-child(2) {
+    width: 20rem;
+  }
+}

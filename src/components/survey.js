@@ -133,10 +133,10 @@ const Survey = props => {
         </RadioButton>,
         <p>Question 1C:</p>,
         <p>Please select the symptoms you have:</p>,
-        <div className="makeup-option-container">
+        <div className="multiple-choice-container">
           {acneSymptoms.map(option => (
-            <div className="makeup-option">
-              <span key={`label_${option}`} className="makeup-item-label">
+            <div className="multiple-choice">
+              <span key={`label_${option}`} className="multiple-choice-label">
                 {option}
               </span>
               <Checkbox
@@ -160,10 +160,10 @@ const Survey = props => {
       ]}
       <p>Question 2:</p>
       <p>Please select the makeup items you use in your daily routine:</p>
-      <div className="makeup-option-container">
+      <div className="multiple-choice-container">
         {makeupItems.map(option => (
-          <div className="makeup-option">
-            <span key={`label_${option}`} className="makeup-item-label">
+          <div className="multiple-choice">
+            <span key={`label_${option}`} className="multiple-choice-label">
               {option}
             </span>
             <Checkbox
@@ -267,10 +267,10 @@ const Survey = props => {
       {data.nonAcne && [
         <p>Question 4B:</p>,
         <p>Please select all that apply:</p>,
-        <div className="makeup-option-container">
+        <div className="multiple-choice-container">
           {nonAcneIssues.map(option => (
-            <div className="makeup-option">
-              <span key={`label_${option}`} className="makeup-item-label">
+            <div className="multiple-choice">
+              <span key={`label_${option}`} className="multiple-choice-label">
                 {option}
               </span>
               <Checkbox

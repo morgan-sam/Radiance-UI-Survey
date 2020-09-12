@@ -1,16 +1,16 @@
 /* #524D6E */
 
-.makeup-option-container {
+.multiple-choice-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.makeup-option {
+.multiple-choice {
   display: flex;
   margin: 0.25rem 0.5rem;
 }
 
-.makeup-item-label {
+.multiple-choice-label {
   margin: 1rem;
 }

@@ -35,12 +35,12 @@ const Footer = ({ siteTitle }) => {
         <div className="social-media-container">
           <div>Follow @curology</div>
           <div className="icon-container">
-            <img src={instagram} />
-            <img src={facebook} />
-            <img src={snapchat} />
-            <img src={twitter} />
-            <img src={youtube} />
-            <img src={pinterest} />
+            <img src={instagram} alt="Instagram Logo" />
+            <img src={facebook} alt="Facebook Logo" />
+            <img src={snapchat} alt="Snapchat Logo" />
+            <img src={twitter} alt="Twitter Logo" />
+            <img src={youtube} alt="Youtube Logo" />
+            <img src={pinterest} alt="Pinterest Logo" />
           </div>
           <a>Need financial assistance?</a>
         </div>

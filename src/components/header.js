@@ -17,12 +17,18 @@ const Header = ({ siteTitle }) => {
           src={hamburger}
           className="hamburger-button"
           onClick={() => setOpen(true)}
+          alt="Open Menu"
         />
       </div>
       <div className={`main-header ${open ? "open" : null}`}>
         <div className="title-container">
           <h1 className="logo">{siteTitle}</h1>
-          <img src={cancel} className="cross" onClick={() => setOpen(false)} />
+          <img
+            src={cancel}
+            className="cross"
+            onClick={() => setOpen(false)}
+            alt="Close Menu"
+          />
         </div>
         <div className="link-container">
           <a className="link-text">Why Curology</a>

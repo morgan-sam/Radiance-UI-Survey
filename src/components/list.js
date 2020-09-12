@@ -8,7 +8,7 @@ const List = props => {
     <ul className="list">
       {items.map((el, i) => (
         <li key={i} className="list-item">
-          <img src={tick} className="list-tick" />
+          <img src={tick} className="list-tick" alt="" />
           {el}
         </li>
       ))}

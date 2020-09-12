@@ -35,7 +35,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       {surveyOpen && <Survey {...{ surveyOpen, setSurveyOpen }} />}
       <div className="section splash">
-        <img className="splash-image"></img>
+        <img className="splash-image" alt="" />
         <div className="splash-text-container">
           <div className="splash-main-text">Need a check up?</div>
           <div className="splash-sub-text">
@@ -85,7 +85,7 @@ const IndexPage = () => {
       <div className="section pocket-guy">
         <div className="pre-gradient"></div>
         <div className="white-overlay-text">{lorem(7)}</div>
-        <img src={thirdImage} className="fill-image" />
+        <img src={thirdImage} className="fill-image" alt="" />
       </div>
       <div className="section callouts">
         <div className="callout-container">
@@ -112,7 +112,7 @@ const IndexPage = () => {
       </div>
       <div className="section toast">
         <div className="pre-gradient"></div>
-        <img src={fourthImage} />
+        <img src={fourthImage} alt="" />
         <div className="white-overlay-text">{lorem(7)}</div>
         <div className="toast-after">
           <div className="toast-text-container">

@@ -112,6 +112,7 @@ body {
 }
 
 .testimony-title {
+  text-align: center;
   font-family: "Larsseit Light", sans-serif;
   font-size: 1.5rem;
   margin: 1.8rem;

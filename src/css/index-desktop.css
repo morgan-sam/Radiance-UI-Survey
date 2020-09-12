@@ -1,0 +1,21 @@
+@media only screen and (min-width: 1200px) {
+  .testimony-container {
+    width: 20vw;
+  }
+  .section.testimonies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: calc(30rem + 40vw);
+    margin: 3rem auto;
+  }
+  .section.testimonies > * {
+    padding: 2rem;
+  }
+  .section.testimonies > *:nth-child(3) {
+    order: 4;
+  }
+  .testimony-paragraph {
+    line-height: 2.5rem;
+  }
+}

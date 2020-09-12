@@ -13,19 +13,20 @@
   .section.pocket-guy {
     position: relative;
     background-color: hsl(49, 11%, 65%);
-    height: 30rem;
+    height: 40rem;
   }
   .section.pocket-guy > .pre-gradient {
     display: none;
   }
   .pocket-guy > .white-overlay-text {
     position: relative;
-    transform: translateY(-50%);
-    width: 20rem;
-    left: calc(10.5rem + 4vw);
+    transform: translateY(-30%);
+    width: 20vw;
+    left: calc(12.5rem + 4vw);
+    font-size: 2rem;
   }
   .pocket-guy > img {
-    width: 25rem;
+    width: 30rem;
     position: absolute;
     left: 0;
   }

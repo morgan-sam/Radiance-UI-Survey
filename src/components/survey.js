@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { ImmersiveModal, Button, OptionButton, RadioButton } from "radiance-ui"
 import { lorem } from "../js/lorem"
 import { css } from "@emotion/core"
@@ -7,7 +7,11 @@ const modalHeaderImage =
   "https://images.unsplash.com/photo-1556228852-80b6e5eeff06?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
 
 const Survey = props => {
+  const [data, setData] = useState({
+    acne: undefined,
+  })
   const { surveyOpen, setSurveyOpen } = props
+
   return (
     <ImmersiveModal
       onClose={() => setSurveyOpen(false)}
@@ -26,23 +30,25 @@ const Survey = props => {
       <p>Are you currently struggling with acne?</p>
       <RadioButton
         type="primary"
-        checked
+        checked={data.acne === true}
         css={css`
           & > p:last-of-type {
             margin-bottom: 0;
           }
         `}
+        onClick={() => setData({ ...data, acne: true })}
       >
         Yes
       </RadioButton>
       <RadioButton
         type="primary"
-        checked
+        checked={data.acne === false}
         css={css`
           & > p:last-of-type {
             margin-bottom: 0;
           }
         `}
+        onClick={() => setData({ ...data, acne: false })}
       >
         No
       </RadioButton>

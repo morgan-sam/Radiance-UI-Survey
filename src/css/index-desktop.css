@@ -62,4 +62,13 @@
     margin: 1rem;
     font-size: 1.6rem;
   }
+
+  /* Section 5: Toast */
+  .toast-image {
+    padding-top: 44rem;
+    transform: translate(30%, -12%) scale(1.2);
+  }
+  .toast-text-title {
+    font-size: 2rem;
+  }
 }

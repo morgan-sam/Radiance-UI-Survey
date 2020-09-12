@@ -1,0 +1,7 @@
+.survey-radio-button {
+  display: none;
+}
+
+.survey-radio-button > p {
+  margin: 0;
+}

@@ -26,8 +26,6 @@ const secondImage =
   "https://images.unsplash.com/photo-1556228720-950d08a2a516?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
 const thirdImage =
   "https://images.unsplash.com/photo-1556227703-cb5f1596c6b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-const fourthImage =
-  "https://images.unsplash.com/photo-1556228578-626e9590b81f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
 
 const IndexPage = () => {
   const [surveyOpen, setSurveyOpen] = useState(false)
@@ -121,7 +119,7 @@ const IndexPage = () => {
       </div>
       <div className="section toast">
         <div className="pre-gradient"></div>
-        <img src={fourthImage} alt="" />
+        <div className="toast-image" alt="" />
         <div className="white-overlay-text">{lorem(7)}</div>
         <div className="toast-after">
           <div className="toast-text-container">

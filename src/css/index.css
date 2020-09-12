@@ -208,6 +208,15 @@ body {
   top: 7%;
 }
 
+.toast-image {
+  background-image: url(https://images.unsplash.com/photo-1556228578-626e9590b81f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 66.64%;
+}
+
 .toast-after {
   background: linear-gradient(
     180deg,

@@ -56,7 +56,7 @@ const Survey = props => {
       <p>
         Thank you for taking our survey. It will take approximately 2-3 minutes.
       </p>
-      <p>Question 1{data.acne === true ? "A" : null}:</p>
+      <h3>Question 1{data.acne === true ? "A" : null}:</h3>
       <p>Are you currently struggling with acne?</p>
       <RadioButton
         type="primary"
@@ -83,7 +83,7 @@ const Survey = props => {
         No
       </RadioButton>
       {data.acne === true && [
-        <p>Question 1B:</p>,
+        <h3>Question 1B:</h3>,
         <p>How long have you had acne for?</p>,
         <RadioButton
           type="primary"
@@ -133,7 +133,7 @@ const Survey = props => {
         >
           2+ years
         </RadioButton>,
-        <p>Question 1C:</p>,
+        <h3>Question 1C:</h3>,
         <p>Please select the symptoms you have:</p>,
         <div className="multiple-choice-container">
           {acneSymptoms.map(option => (
@@ -160,7 +160,7 @@ const Survey = props => {
           ))}
         </div>,
       ]}
-      <p>Question 2:</p>
+      <h3>Question 2:</h3>
       <p>Please select the makeup items you use in your daily routine:</p>
       <div className="multiple-choice-container">
         {makeupItems.map(option => (
@@ -183,7 +183,7 @@ const Survey = props => {
           </div>
         ))}
       </div>
-      <p>Question 3{data.previous ? "A" : null}:</p>
+      <h3>Question 3{data.previous ? "A" : null}:</h3>
       <p>Have you previously had any skincare treatment?</p>
       <RadioButton
         type="primary"
@@ -210,7 +210,7 @@ const Survey = props => {
         No
       </RadioButton>
       {data.previous && [
-        <p>Question 3B:</p>,
+        <h3>Question 3B:</h3>,
         <p>Did your symptoms improve or worsen?</p>,
         <OptionButton
           selected={data.previousResult === "improvement"}
@@ -240,7 +240,7 @@ const Survey = props => {
           icon={<ThumbsDownIcon />}
         />,
       ]}
-      <p>Question 4{data.nonAcne ? "A" : null}:</p>
+      <h3>Question 4{data.nonAcne ? "A" : null}:</h3>
       <p>Do you have any non acne skin issues?</p>
       <RadioButton
         type="primary"
@@ -267,7 +267,7 @@ const Survey = props => {
         No
       </RadioButton>
       {data.nonAcne && [
-        <p>Question 4B:</p>,
+        <h3>Question 4B:</h3>,
         <p>Please select all that apply:</p>,
         <div className="multiple-choice-container">
           {nonAcneIssues.map(option => (
@@ -297,7 +297,7 @@ const Survey = props => {
           ))}
         </div>,
       ]}
-      <p>Question 5:</p>
+      <h3>Question 5:</h3>
       <p>Are you currently seeking skincare treatment?</p>
       <RadioButton
         type="primary"

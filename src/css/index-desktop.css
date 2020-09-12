@@ -1,4 +1,6 @@
 @media only screen and (min-width: 1200px) {
+  /* Section 2: Testimonies */
+
   .testimony-container {
     width: 20vw;
   }
@@ -17,5 +19,20 @@
   }
   .testimony-paragraph {
     line-height: 2.5rem;
+  }
+
+  /* Section 3: Pocket Guy */
+  .section.pocket-guy {
+    height: 100vh;
+  }
+  .pocket-guy > .white-overlay-text {
+    left: 0%;
+    top: 0;
+    transform: translateX(26vw);
+    font-size: 3rem;
+    line-height: 10rem;
+  }
+  .pocket-guy > img {
+    width: 50vw;
   }
 }

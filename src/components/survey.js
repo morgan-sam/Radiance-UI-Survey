@@ -29,17 +29,31 @@ const Survey = props => {
       onClose={() => setSurveyOpen(false)}
       headerImage={<img src={modalHeaderImage} alt="header" />}
       footerContent={
-        <Button.Container>
-          <Button
-            onClick={() => {
-              setSurveyOpen(false)
-              setThankYou(true)
-              console.log("yo")
-            }}
-          >
-            Submit
-          </Button>
-        </Button.Container>
+        <div className="survey-footer">
+          <p>Please enter a valid email address:</p>
+          <Field labelFor="input-hint">
+            <Field.Input
+              id="input-hint"
+              type="text"
+              placeholder="Email Address"
+              style={{
+                padding: "1rem 0",
+                textIndent: "1rem",
+              }}
+            />
+          </Field>
+          <Button.Container>
+            <Button
+              onClick={() => {
+                setSurveyOpen(false)
+                setThankYou(true)
+                console.log("yo")
+              }}
+            >
+              Submit
+            </Button>
+          </Button.Container>
+        </div>
       }
       title="Curology Survey"
     >
@@ -51,18 +65,6 @@ const Survey = props => {
       <QuestionThree {...{ data, setData }} />
       <QuestionFour {...{ data, setData }} />
       <QuestionFive {...{ data, setData }} />
-      <p>Please enter a valid email address:</p>
-      <Field labelFor="input-hint">
-        <Field.Input
-          id="input-hint"
-          type="text"
-          placeholder="Email Address"
-          style={{
-            padding: "1rem 0",
-            textIndent: "1rem",
-          }}
-        />
-      </Field>
     </ImmersiveModal>
   )
 }

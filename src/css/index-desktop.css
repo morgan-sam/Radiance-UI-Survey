@@ -24,7 +24,6 @@
   /* Section 3: Pocket Guy */
   .section.pocket-guy {
     height: 100vh;
-    background-color: hsl(49, 11%, 65%);
   }
   .pocket-guy > .white-overlay-text {
     left: 0%;

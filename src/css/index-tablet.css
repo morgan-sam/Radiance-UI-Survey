@@ -12,7 +12,7 @@
 
   .section.pocket-guy {
     position: relative;
-    background: rgb(167, 151, 196);
+    background-color: hsl(49, 11%, 65%);
     height: 30rem;
   }
   .section.pocket-guy > .pre-gradient {

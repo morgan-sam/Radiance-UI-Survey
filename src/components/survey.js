@@ -34,6 +34,7 @@ const Survey = props => {
     makeup: [],
     previous: undefined,
     previousResult: undefined,
+    nonAcne: undefined,
   })
   const { surveyOpen, setSurveyOpen } = props
 
@@ -237,6 +238,30 @@ const Survey = props => {
       ]}
       <p>Question 4:</p>
       <p>Do you have any non acne skin issues?</p>
+      <RadioButton
+        type="primary"
+        checked={data.nonAcne === true}
+        css={css`
+          & > p:last-of-type {
+            margin-bottom: 0;
+          }
+        `}
+        onClick={() => setData({ ...data, nonAcne: true })}
+      >
+        Yes
+      </RadioButton>
+      <RadioButton
+        type="primary"
+        checked={data.nonAcne === false}
+        css={css`
+          & > p:last-of-type {
+            margin-bottom: 0;
+          }
+        `}
+        onClick={() => setData({ ...data, nonAcne: false })}
+      >
+        No
+      </RadioButton>
       <p>Question 5:</p>
       <p>{lorem(10)}?</p>
     </ImmersiveModal>

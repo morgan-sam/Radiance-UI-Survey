@@ -12,6 +12,7 @@ import "../css/index.css"
 import PatternAttacher from "../components/patternAttacher"
 import List from "../components/list"
 import Survey from "../components/survey"
+import ThankYou from "../components/ThankYou"
 
 import { lorem } from "../js/lorem"
 
@@ -29,11 +30,13 @@ const fourthImage =
 
 const IndexPage = () => {
   const [surveyOpen, setSurveyOpen] = useState(false)
+  const [thankYou, setThankYou] = useState(false)
 
   return (
     <Layout>
       <SEO title="Home" />
-      {surveyOpen && <Survey {...{ surveyOpen, setSurveyOpen }} />}
+      {surveyOpen && <Survey {...{ setSurveyOpen, setThankYou }} />}
+      {thankYou && <ThankYou {...{ setThankYou }} />}
       <div className="section splash">
         <img className="splash-image" alt="" />
         <div className="splash-text-container">

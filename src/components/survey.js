@@ -22,7 +22,7 @@ const Survey = props => {
     nonAcneIssues: [],
     seeking: undefined,
   })
-  const { surveyOpen, setSurveyOpen } = props
+  const { setSurveyOpen, setThankYou } = props
 
   return (
     <ImmersiveModal
@@ -30,7 +30,15 @@ const Survey = props => {
       headerImage={<img src={modalHeaderImage} alt="header" />}
       footerContent={
         <Button.Container>
-          <Button>Submit</Button>
+          <Button
+            onClick={() => {
+              setSurveyOpen(false)
+              setThankYou(true)
+              console.log("yo")
+            }}
+          >
+            Submit
+          </Button>
         </Button.Container>
       }
       title="Curology Survey"

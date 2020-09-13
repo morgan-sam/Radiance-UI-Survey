@@ -17,6 +17,9 @@
 
   /* Section 2: Testimonies */
 
+  .testimony-title {
+    font-family: "Larsseit", sans-serif;
+  }
   .testimony-container {
     width: 20vw;
   }

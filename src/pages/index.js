@@ -71,6 +71,7 @@ const IndexPage = () => {
           <div className="testimony-labelled-image">
             <div className="testimony-title">{lorem(5)}</div>
             <PatternAttacher
+              className="testimony-image"
               src={firstImage}
               svg={blob}
               x={"-3rem"}

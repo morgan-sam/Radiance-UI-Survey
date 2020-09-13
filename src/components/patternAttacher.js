@@ -49,7 +49,7 @@ const PatternAttacher = props => {
   }
 
   return (
-    <div style={props.style}>
+    <div style={props.style} className={props.className}>
       <div style={containerStyle}>
         {loadPattern && (
           <Pattern

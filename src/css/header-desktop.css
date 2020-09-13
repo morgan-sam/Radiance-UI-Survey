@@ -4,4 +4,8 @@
   .cross {
     cursor: pointer;
   }
+
+  .cross {
+    padding-right: 1rem;
+  }
 }

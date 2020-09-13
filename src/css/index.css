@@ -20,6 +20,12 @@ a {
 
 /* General Styles */
 
+@-moz-document url-prefix() {
+  .white-overlay-text {
+    width: 80vw;
+  }
+}
+
 body {
   position: relative;
   margin: 0;
@@ -225,12 +231,6 @@ body {
 
 .call-to-action > .white-overlay-text {
   top: 7%;
-}
-
-@-moz-document url-prefix() {
-  .call-to-action > .white-overlay-text {
-    width: 80vw;
-  }
 }
 
 .call-to-action-after {

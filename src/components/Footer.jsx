@@ -61,36 +61,24 @@ const Footer = ({ siteTitle }) => {
         <div className="social-media-container">
           <div>Follow @curology</div>
           <div className="icon-container">
-            <img
-              src={instagram}
-              alt="Instagram Logo"
-              href="https://www.instagram.com/curology/"
-            />
-            <img
-              src={facebook}
-              alt="Facebook Logo"
-              href="https://www.facebook.com/Curology/"
-            />
-            <img
-              src={snapchat}
-              alt="Snapchat Logo"
-              href="https://www.snapchat.com/add/curology"
-            />
-            <img
-              src={twitter}
-              alt="Twitter Logo"
-              href="https://twitter.com/CurologyUSA"
-            />
-            <img
-              src={youtube}
-              alt="Youtube Logo"
-              href="https://www.youtube.com/Curology"
-            />
-            <img
-              src={pinterest}
-              alt="Pinterest Logo"
-              href="https://www.pinterest.com/curology/"
-            />
+            <a href="https://www.instagram.com/curology">
+              <img src={instagram} alt="Instagram Logo" />
+            </a>
+            <a href="https://www.facebook.com/Curology">
+              <img src={facebook} alt="Facebook Logo" />
+            </a>
+            <a href="https://www.snapchat.com/add/curology">
+              <img src={snapchat} alt="Snapchat Logo" />
+            </a>
+            <a href="https://twitter.com/CurologyUSA">
+              <img src={twitter} alt="Twitter Logo" />
+            </a>
+            <a href="https://www.youtube.com/Curology">
+              <img src={youtube} alt="Youtube Logo" />
+            </a>
+            <a href="https://www.pinterest.com/curology">
+              <img src={pinterest} alt="Pinterest Logo" />
+            </a>
           </div>
           {/* <a>Need financial assistance?</a> */}
         </div>

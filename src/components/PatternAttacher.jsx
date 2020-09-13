@@ -79,6 +79,12 @@ const PatternAttacher = props => {
               rotation_upper: props.rotation_upper
                 ? props.rotation_upper
                 : default_pattern_params.rotation_upper,
+              x_offset: props.x_offset
+                ? props.x_offset
+                : default_pattern_params.x_offset,
+              y_offset: props.y_offset
+                ? props.y_offset
+                : default_pattern_params.y_offset,
             }}
           />
         )}

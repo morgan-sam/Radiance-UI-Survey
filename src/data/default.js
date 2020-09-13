@@ -8,4 +8,6 @@ export const default_pattern_params = {
   random_y_offset: 60,
   rotation_lower: -180,
   rotation_upper: 180,
+  x_offset: 0,
+  y_offset: 0,
 }

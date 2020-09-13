@@ -80,6 +80,10 @@ const IndexPage = () => {
               y={"-3rem"}
               height={"30rem"}
               color={"hsl(80,80%,70%)"}
+              x_offset={-6}
+              random_x_offset={20}
+              random_y_offset={30}
+              shape_scale={6}
             />
           </div>
         </div>

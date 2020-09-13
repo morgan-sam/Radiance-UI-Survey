@@ -37,18 +37,22 @@ const calculateRotation = params => {
 }
 
 const calculateXPosition = (width, i, perRow, params) => {
-  const { x_gap, random_x_offset } = params
+  const { x_gap, random_x_offset, x_offset } = params
   return (
-    (i % perRow) * width * x_gap + width / 2 + random_x_offset * Math.random()
+    (i % perRow) * width * x_gap +
+    width / 2 +
+    random_x_offset * Math.random() +
+    x_offset
   )
 }
 
 const calculateYPosition = (height, i, perRow, params) => {
-  const { y_gap, random_y_offset } = params
+  const { y_gap, random_y_offset, y_offset } = params
   return (
     Math.floor(i / perRow) * height * y_gap +
     height / 2 +
-    random_y_offset * Math.random()
+    random_y_offset * Math.random() +
+    y_offset
   )
 }
 

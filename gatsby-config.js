@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/Radiance-UI-Survey",
   siteMetadata: {
     title: `Curology`,
     description: `Treat Acne, Fine Lines and More | Curology Custom Skincare | Start Your Free Trial`,

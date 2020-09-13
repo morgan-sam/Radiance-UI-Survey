@@ -13,7 +13,7 @@ import "../css/index-desktop.css"
 
 import PatternAttacher from "../components/PatternAttacher"
 import List from "../components/List"
-import Survey from "../components/survey"
+import Survey from "../components/Survey"
 import ThankYou from "../components/ThankYou"
 
 import { lorem } from "../js/lorem"

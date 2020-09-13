@@ -130,13 +130,13 @@ const IndexPage = () => {
           </Callout.Container>
         </div>
       </div>
-      <div className="section toast">
+      <div className="section call-to-action">
         <div className="pre-gradient"></div>
         <img src={fourthImage} className="fill-image" alt="" />
         <div className="white-overlay-text">{lorem(7)}</div>
-        <div className="toast-after">
-          <div className="toast-text-container">
-            <div className="toast-text-title">{lorem(4)}</div>
+        <div className="call-to-action-after">
+          <div className="call-to-action-text-container">
+            <div className="call-to-action-text-title">{lorem(4)}</div>
             <List items={new Array(4).fill(lorem(6))} />
             <div className="survey-container">
               <Button

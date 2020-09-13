@@ -144,7 +144,7 @@ body {
 /* Section 3 & 5 */
 
 .pocket-guy > img,
-.toast > img {
+.call-to-action > img {
   width: 100vw;
 }
 
@@ -200,9 +200,9 @@ body {
   margin: 5px 0;
 }
 
-/* Section 5: Toast */
+/* Section 5: call-to-action */
 
-.toast > .pre-gradient {
+.call-to-action > .pre-gradient {
   background: linear-gradient(
     180deg,
     hsl(257, 34%, 80%) 0%,
@@ -210,15 +210,15 @@ body {
     hsla(257, 34%, 80%, 0%) 100%
   );
 }
-.toast > .pre-gradient {
+.call-to-action > .pre-gradient {
   height: 8rem;
 }
 
-.toast > .white-overlay-text {
+.call-to-action > .white-overlay-text {
   top: 7%;
 }
 
-.toast-after {
+.call-to-action-after {
   background: linear-gradient(
     180deg,
     hsla(257, 34%, 80%, 0%),
@@ -230,7 +230,7 @@ body {
   width: 100vw;
 }
 
-.toast-text-container {
+.call-to-action-text-container {
   width: 100%;
   display: flex;
   align-items: center;
@@ -239,7 +239,7 @@ body {
   margin: 5rem 0;
 }
 
-.toast-text-title {
+.call-to-action-text-title {
   font-family: "Larsseit", sans-serif;
   color: white;
   font-size: 1.3rem;

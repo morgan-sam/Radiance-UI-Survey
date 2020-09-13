@@ -101,26 +101,26 @@
     font-size: 1.4rem;
   }
 
-  /* Section 5: Toast */
+  /* Section 5: call-to-action */
 
-  .toast.section {
+  .call-to-action.section {
     height: 60rem;
   }
-  .toast.section > img {
+  .call-to-action.section > img {
     width: 33vw;
   }
 
-  .toast > .white-overlay-text {
+  .call-to-action > .white-overlay-text {
     font-size: 2.5rem;
     margin: 2rem 0;
   }
-  .toast-text-title {
+  .call-to-action-text-title {
     font-size: 2rem;
   }
   .list-item {
     font-size: 1.5rem;
   }
-  .toast-text-container {
+  .call-to-action-text-container {
     transform: translate(0, 20%);
   }
 }

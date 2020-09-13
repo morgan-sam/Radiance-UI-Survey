@@ -12,4 +12,23 @@
   .mobile-header {
     display: none;
   }
+  .header {
+    margin: 0;
+  }
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .main-header > * {
+    margin: 0;
+  }
+  .cross {
+    display: none;
+  }
+  .link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }

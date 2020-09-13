@@ -63,7 +63,7 @@ const IndexPage = () => {
         </div>
       </div>
       <div className="section testimonies">
-        <div className="testimony-container">
+        <div className="testimony-text-container">
           <div className="testimony-title">{lorem(7)}</div>
           <div className="testimony-paragraph">{lorem(36)}</div>
         </div>
@@ -78,7 +78,7 @@ const IndexPage = () => {
             color={"hsl(80,80%,70%)"}
           />
         </div>
-        <div className="testimony-container">
+        <div className="testimony-text-container">
           <div className="testimony-title">{lorem(7)}</div>
           <div className="testimony-paragraph">{lorem(36)}</div>
         </div>

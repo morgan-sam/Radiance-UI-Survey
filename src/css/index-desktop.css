@@ -70,6 +70,7 @@
   .callout-container > * > * {
     padding: 2rem;
     width: 20rem;
+    margin-left: -1rem;
   }
 
   .callout-container > * > * > div:last-child {

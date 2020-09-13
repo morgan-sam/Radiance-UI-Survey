@@ -24,24 +24,32 @@
   .testimony-title {
     font-family: "Larsseit", sans-serif;
   }
-  .testimony-text-container {
-    width: 20vw;
-  }
+
   .section.testimonies {
+    width: auto;
+  }
+
+  .testimony {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: calc(30rem + 40vw);
-    margin: 3rem auto;
+    align-items: center;
+    justify-content: center;
   }
-  .section.testimonies > * {
-    padding: 2rem;
+  .testimony > * {
+    width: 20vw;
+    margin: 0 4rem;
   }
-  .section.testimonies > *:nth-child(3) {
-    order: 4;
+  .testimony:nth-child(even) {
+    flex-direction: row-reverse;
   }
+
   .testimony-paragraph {
     line-height: 2.5rem;
+  }
+
+  .testimony-image {
+    display: flex;
+    justify-content: center;
   }
 
   /* Section 3: Pocket Guy */

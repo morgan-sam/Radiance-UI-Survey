@@ -1,0 +1,7 @@
+@media only screen and (min-width: 1200px) {
+  .logo,
+  .hamburger-button,
+  .cross {
+    cursor: pointer;
+  }
+}

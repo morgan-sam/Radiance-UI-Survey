@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 import React, { useState } from "react"
 
 import "../css/header.css"
+import "../css/header-desktop.css"
 import cancel from "../svg/cancel.svg"
 import hamburger from "../svg/hamburger.svg"
 

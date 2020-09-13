@@ -12,4 +12,8 @@
   .footer-section:nth-child(2) {
     width: 20rem;
   }
+
+  .icon-container > * {
+    cursor: pointer;
+  }
 }

@@ -77,28 +77,24 @@
 
   .section.toast {
     position: relative;
-    height: 100vh;
+    background-color: hsl(257, 34%, 80%);
+    height: 40rem;
   }
-  .toast > .pre-gradient {
-    display: none;
-  }
-  .section.toast,
-  .toast-after {
-    background: rgb(196, 186, 221);
+  .section.toast > img {
+    position: absolute;
+    width: 50vw;
+    right: 0;
+    top: 40%;
+    transform: translateY(-50%);
+    mask-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 1) 90%,
+      rgba(0, 0, 0, 0)
+    );
   }
 
-  .toast-image {
-    width: 50vw;
-    position: absolute;
-    right: 0;
-    background: linear-gradient(
-        to left,
-        rgba(255, 255, 255, 0) 90%,
-        rgb(196, 186, 221)
-      ),
-      url("");
-    height: 15rem;
-    transform: translate(5%, -5%);
+  .toast > .pre-gradient {
+    display: none;
   }
   .toast-text-container {
     left: 0;

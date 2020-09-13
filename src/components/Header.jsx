@@ -26,7 +26,9 @@ const Header = ({ siteTitle }) => {
       </div>
       <div className={`main-header ${open ? "open" : null}`}>
         <div className="title-container">
-          <h1 className="logo">{siteTitle}</h1>
+          <a href="https://curology.com/">
+            <h1 className="logo">{siteTitle}</h1>
+          </a>
           <img
             src={cancel}
             className="cross"

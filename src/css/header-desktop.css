@@ -8,4 +8,8 @@
   .cross {
     padding-right: 1rem;
   }
+
+  .mobile-header {
+    display: none;
+  }
 }

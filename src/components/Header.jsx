@@ -1,8 +1,11 @@
+/** @jsx jsx */
+
 import COLORS from "tinycolor2"
 import { LinkButton, Button } from "radiance-ui"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import React, { useState } from "react"
+import { jsx, css } from "@emotion/core"
 
 import "../css/header.css"
 import "../css/header-desktop.css"
@@ -10,7 +13,7 @@ import cancel from "../svg/cancel.svg"
 import hamburger from "../svg/hamburger.svg"
 
 const Header = ({ siteTitle }) => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
   return (
     <header className="header">
       <div className="mobile-header">
@@ -24,7 +27,15 @@ const Header = ({ siteTitle }) => {
           alt="Open Menu"
         />
       </div>
-      <div className={`main-header ${open ? "open" : null}`}>
+      <div
+        className={`main-header ${open ? "open" : null}`}
+        css={css`
+          @media (min-width: 1200px) {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        `}
+      >
         <div className="title-container">
           <a href="https://curology.com/">
             <h1 className="logo">{siteTitle}</h1>

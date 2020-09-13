@@ -1,6 +1,10 @@
 @media only screen and (min-width: 1200px) {
   /* Section 1: Splash */
 
+  .mobile-header {
+    padding: 0 2rem 0 1rem;
+  }
+
   .section.splash {
     height: 42rem;
   }

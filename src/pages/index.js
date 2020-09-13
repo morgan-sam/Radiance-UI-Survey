@@ -98,6 +98,8 @@ const IndexPage = () => {
               y={"-3rem"}
               height={"30rem"}
               color={"hsl(47,70%,65%)"}
+              shape_scale={9}
+              x_gap={2}
             />
           </div>
         </div>

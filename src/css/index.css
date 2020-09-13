@@ -107,8 +107,12 @@ body {
 
 /* Section 2: Testimonies */
 
+.section.testimonies {
+  margin: 3rem 0;
+}
+
 .testimony-text-container {
-  margin: 1rem;
+  margin: 2rem;
 }
 
 .testimony-title {

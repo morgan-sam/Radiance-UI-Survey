@@ -63,35 +63,39 @@ const IndexPage = () => {
         </div>
       </div>
       <div className="section testimonies">
-        <div className="testimony-text-container">
-          <div className="testimony-title">{lorem(7)}</div>
-          <div className="testimony-paragraph">{lorem(36)}</div>
+        <div className="testimony">
+          <div className="testimony-text-container">
+            <div className="testimony-title">{lorem(7)}</div>
+            <div className="testimony-paragraph">{lorem(36)}</div>
+          </div>
+          <div className="testimony-labelled-image">
+            <div className="testimony-title">{lorem(5)}</div>
+            <PatternAttacher
+              src={firstImage}
+              svg={blob}
+              x={"-3rem"}
+              y={"-3rem"}
+              height={"30rem"}
+              color={"hsl(80,80%,70%)"}
+            />
+          </div>
         </div>
-        <div className="testimony-labelled-image">
-          <div className="testimony-title">{lorem(5)}</div>
-          <PatternAttacher
-            src={firstImage}
-            svg={blob}
-            x={"-3rem"}
-            y={"-3rem"}
-            height={"30rem"}
-            color={"hsl(80,80%,70%)"}
-          />
-        </div>
-        <div className="testimony-text-container">
-          <div className="testimony-title">{lorem(7)}</div>
-          <div className="testimony-paragraph">{lorem(36)}</div>
-        </div>
-        <div className="testimony-labelled-image">
-          <div className="testimony-title">{lorem(5)}</div>
-          <PatternAttacher
-            src={secondImage}
-            svg={star}
-            x={"3rem"}
-            y={"-3rem"}
-            height={"30rem"}
-            color={"hsl(47,70%,65%)"}
-          />
+        <div className="testimony">
+          <div className="testimony-text-container">
+            <div className="testimony-title">{lorem(7)}</div>
+            <div className="testimony-paragraph">{lorem(36)}</div>
+          </div>
+          <div className="testimony-labelled-image">
+            <div className="testimony-title">{lorem(5)}</div>
+            <PatternAttacher
+              src={secondImage}
+              svg={star}
+              x={"3rem"}
+              y={"-3rem"}
+              height={"30rem"}
+              color={"hsl(47,70%,65%)"}
+            />
+          </div>
         </div>
       </div>
       <div className="section pocket-guy">

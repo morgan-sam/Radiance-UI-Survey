@@ -47,11 +47,6 @@
     line-height: 2.5rem;
   }
 
-  .testimony-image {
-    display: flex;
-    justify-content: center;
-  }
-
   /* Section 3: Pocket Guy */
   .section.pocket-guy {
     height: 110vh;

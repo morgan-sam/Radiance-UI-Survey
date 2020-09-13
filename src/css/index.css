@@ -100,12 +100,13 @@ body {
 }
 
 .splash-main-text {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
   font-size: 2rem;
 }
 
 .splash-sub-text {
   font-family: "Lato", sans-serif;
-  font-weight: 200;
   font-size: 1rem;
 }
 

@@ -80,6 +80,11 @@
     background-color: hsl(257, 34%, 80%);
     height: 40rem;
   }
+  @-moz-document url-prefix() {
+    .section.call-to-action {
+      height: 50rem;
+    }
+  }
   .section.call-to-action > img {
     position: absolute;
     width: 50vw;

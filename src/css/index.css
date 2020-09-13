@@ -227,6 +227,12 @@ body {
   top: 7%;
 }
 
+@-moz-document url-prefix() {
+  .call-to-action > .white-overlay-text {
+    width: 80vw;
+  }
+}
+
 .call-to-action-after {
   background: linear-gradient(
     180deg,

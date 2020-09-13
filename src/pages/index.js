@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 
 import { Button, Callout, Typography } from "radiance-ui"
 import { PlanIcon, GiftIcon, SmileIcon } from "radiance-ui/lib/icons"
@@ -11,8 +11,8 @@ import "../css/index.css"
 import "../css/index-tablet.css"
 import "../css/index-desktop.css"
 
-import PatternAttacher from "../components/patternAttacher"
-import List from "../components/list"
+import PatternAttacher from "../components/PatternAttacher"
+import List from "../components/List"
 import Survey from "../components/survey"
 import ThankYou from "../components/ThankYou"
 

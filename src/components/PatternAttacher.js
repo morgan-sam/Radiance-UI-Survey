@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react"
-import Pattern from "../components/pattern"
+import Pattern from "./Pattern"
 import { default_pattern_params } from "../data/default"
 
 const PatternAttacher = props => {

@@ -14,7 +14,9 @@ const Header = ({ siteTitle }) => {
   return (
     <header className="header">
       <div className="mobile-header">
-        <h1 className="logo">{siteTitle}</h1>
+        <a href="https://curology.com/">
+          <h1 className="logo">{siteTitle}</h1>
+        </a>
         <img
           src={hamburger}
           className="hamburger-button"

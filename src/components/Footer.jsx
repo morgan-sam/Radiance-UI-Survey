@@ -16,7 +16,9 @@ const Footer = ({ siteTitle }) => {
   return (
     <div className="footer">
       <div className="footer-section">
-        <h1 className="footer-logo">{siteTitle}</h1>
+        <a href="https://curology.com/">
+          <h1 className="footer-logo">{siteTitle}</h1>
+        </a>
         <div className="footer-links-horizontal">
           <div className="footer-link-container">
             <a className="footer-link" href="https://curology.com/why-curology">

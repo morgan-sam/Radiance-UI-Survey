@@ -15,6 +15,10 @@
     top: 18vh;
   }
 
+  .splash-image {
+    background-position: calc(-40rem + 30vw) 45%;
+  }
+
   .splash-text-container > .survey-container {
     margin: 2rem 0 0 1.3rem;
   }

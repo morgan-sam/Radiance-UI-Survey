@@ -64,6 +64,7 @@ const Header = ({ siteTitle }) => {
         <div className="login-btn-container">
           <Button.Container>
             <LinkButton
+              className="btn"
               buttonColor={COLORS.statusRed}
               buttonType="secondary"
               style={{ minWidth: "4rem", userSelect: "none" }}
@@ -73,6 +74,7 @@ const Header = ({ siteTitle }) => {
           </Button.Container>
           <Button.Container>
             <LinkButton
+              className="btn"
               buttonColor={COLORS.statusRed}
               buttonType="primary"
               style={{ minWidth: "4rem", userSelect: "none" }}

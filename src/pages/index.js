@@ -48,6 +48,7 @@ const IndexPage = () => {
           </div>
           <div className="survey-container">
             <Button
+              className="btn"
               buttonColor={COLORS.statusRed}
               buttonType="primary"
               onClick={() => setSurveyOpen(true)}
@@ -146,6 +147,7 @@ const IndexPage = () => {
             <List items={new Array(4).fill(lorem(6))} />
             <div className="survey-container">
               <Button
+                className="btn"
                 buttonColor={COLORS.statusRed}
                 buttonType="primary"
                 onClick={() => setSurveyOpen(true)}

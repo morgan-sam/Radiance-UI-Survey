@@ -10,7 +10,9 @@ const ThankYou = props => {
     >
       <p>Check your email for your new skincare routine.</p>
       <Button.Container>
-        <Button onClick={() => setThankYou(false)}>Ok</Button>
+        <Button className="btn" onClick={() => setThankYou(false)}>
+          Ok
+        </Button>
       </Button.Container>
     </DialogModal>
   )

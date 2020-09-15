@@ -44,6 +44,7 @@ const Survey = props => {
           </Field>
           <Button.Container>
             <Button
+              className="btn"
               onClick={() => {
                 setSurveyOpen(false)
                 setThankYou(true)
